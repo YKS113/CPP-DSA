@@ -803,3 +803,80 @@ while(i<=n){
     cout<<endl;
 }
 } */
+
+//pattern 25
+/*
+#include<iostream>
+using namespace std;
+
+int main(){
+
+int n,i,j,x;
+cin>>n;
+i=1;
+while(i<=2*n-1){
+    j=1;
+    i<=n ? x=i : x=2*n-i;
+    while(j<=x){
+        cout<<"*"<<" ";
+        j++;
+    }
+    
+    i++;
+    cout<<endl;
+}
+} 
+*/
+// line 818 - x= n- (i-n) => 2n-i
+/* o/p= for n=5
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
+    * * * *
+    * * *
+    * * 
+    * 
+        */
+
+//pattern 26
+/*
+#include<iostream>
+using namespace std;
+
+int main(){
+
+int n,i,j,x;
+cin>>n;
+i=1;
+while(i<=2*n-1){
+    j=1;
+    i<=n ? x=i-1 : x=2*n-i-1;
+    while(j<=x){
+        cout<<" ";
+        j++;
+    }
+    j=1;
+    while(j<=n-x){
+        cout<<"*"<<" ";
+        j++;
+    }
+    
+    i++;
+    cout<<endl;
+};
+} 
+*/
+// line 818 - x= n- (i-n) => 2n-i
+/* o/p= for n=5
+          * * * * *
+           * * * *
+            * * *
+             * * 
+              *
+             * *
+            * * *
+           * * * *
+          * * * * *
+        */
