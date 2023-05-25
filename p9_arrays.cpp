@@ -209,3 +209,10 @@ we first xor all elments in array then we xor the ans with all integers from 1 t
 /*
 P-8 Leetcode 442 Find all duplicates in array
 */
+
+/*
+P-9 Codechef Intersection of sorted arrays
+Link- https://www.codingninjas.com/codestudio/problems/intersection-of-2-arrays_1082149?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1
+
+M-1 & M-2(more optimized)
+*/
