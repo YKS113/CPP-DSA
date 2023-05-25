@@ -70,7 +70,7 @@ for(int i=0; i<size;i++){
 #include<iostream>
 using namespace std;
 
-bool reverse(int arr[], int n){
+void reverse(int arr[], int n){
     int j=n-1, x;
     for(int i=0; i<n/2; i++){
         x= arr[i];
@@ -100,7 +100,7 @@ cout << reverse(num2,6)<<endl;
 #include<iostream>
 using namespace std;
 
-bool reverse(int arr[], int n){
+void reverse(int arr[], int n){
     int start=0, end=n-1;
     while(start<end){
         swap(arr[start], arr[end]);
@@ -132,7 +132,7 @@ cout << reverse(num2,6)<<endl;
 #include<iostream>
 using namespace std;
 
-bool swapAlt(int arr[], int n){
+void swapAlt(int arr[], int n){
     int first=0, second=1;
     while(second<n){
         swap(arr[first], arr[second]);
@@ -164,7 +164,7 @@ cout << swapAlt(num2,6)<<endl;
 #include<iostream>
 using namespace std;
 
-bool swapAlt(int arr[], int n){
+void swapAlt(int arr[], int n){
     for(int i=0; i+1<n; i+=2){
         swap(arr[i], arr[i+1]);
     }
