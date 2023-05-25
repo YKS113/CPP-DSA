@@ -61,7 +61,7 @@ for(int i=0; i<size;i++){
    cout<<"enter the no. to be searched"<<endl;
    cin>> key;
    search(num,size,key)? cout<< "given no. is present in the array"<<endl: cout<< "given no. is not present in the array"<<endl;
-   
+
 }
 */
 
@@ -72,17 +72,17 @@ using namespace std;
 
 bool reverse(int arr[], int n){
     int j=n-1, x;
-    for(int i=0; i<n/2; i++){ 
+    for(int i=0; i<n/2; i++){
         x= arr[i];
         arr[i]=arr[j];
         arr[j]=x;
-        j--;  
+        j--;
     }
     // to print the array
     for(int i=0; i<n; i++){
         cout<< arr[i]<<" ";
     }
-    
+
 };
 
 int main()
@@ -92,11 +92,11 @@ int num2[]={3,4,7,85,9,2};
 
 cout << reverse(num,5)<<endl;
 cout << reverse(num2,6)<<endl;
-   
+
 }*/
 
 // P-3 M-2 (preferred method) Reverse an array
-
+/*
 #include<iostream>
 using namespace std;
 
@@ -111,7 +111,7 @@ bool reverse(int arr[], int n){
     for(int i=0; i<n; i++){
         cout<< arr[i]<<" ";
     }
-    
+
 };
 
 int main()
@@ -121,5 +121,66 @@ int num2[]={3,4,7,85,9,2};
 
 cout << reverse(num,5)<<endl;
 cout << reverse(num2,6)<<endl;
-   
+
+}*/
+// o/p- {9,85,7,4,3}
+//      {2,9,85,7,4,3}
+// The function std::swap() is a built-in function in the C++ Standard Template Library (STL) which swaps the value of two variables.
+
+// P-4 M-1 swap alternate elements/ adjacent elements
+/*
+#include<iostream>
+using namespace std;
+
+bool swapAlt(int arr[], int n){
+    int first=0, second=1;
+    while(second<n){
+        swap(arr[first], arr[second]);
+        first+=2;
+        second+=2;
+    }
+    // to print the array
+    for(int i=0; i<n; i++){
+        cout<< arr[i]<<" ";
+    }
+
+};
+
+int main()
+{
+int num[]={3,4,7,85,9};
+int num2[]={3,4,7,85,9,2};
+
+cout << swapAlt(num,5)<<endl;
+cout << swapAlt(num2,6)<<endl;
+
 }
+*/
+// o/p- {4,3,85,7,9}
+//      {4,3,85,7,2,9}
+
+// P-4 M-2 swap alternate elements/ adjacent elements
+/*
+#include<iostream>
+using namespace std;
+
+bool swapAlt(int arr[], int n){
+    for(int i=0; i+1<n; i+=2){
+        swap(arr[i], arr[i+1]);
+    }
+    // to print the array
+    for(int i=0; i<n; i++){
+        cout<< arr[i]<<" ";
+    }
+
+};
+
+int main()
+{
+int num[]={3,4,7,85,9};
+int num2[]={3,4,7,85,9,2};
+
+cout << swapAlt(num,5)<<endl;
+cout << swapAlt(num2,6)<<endl;
+
+}*/
