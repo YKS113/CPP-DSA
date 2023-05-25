@@ -202,4 +202,10 @@ P-6 Leetcode 1207 unique no of occurences
 /*
 P-7 CodeStudio duplicte elemnt in array
 link- https://www.codingninjas.com/codestudio/problems/duplicate-in-array_893397?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1
+
+we first xor all elments in array then we xor the ans with all integers from 1 to n-1 so that no.s occuring two times get xored to zero and the one occuring three times remains and gets xored with 0 thus, ans= duplicate no. 
+*/
+
+/*
+P-8 Leetcode 442 Find all duplicates in array
 */
