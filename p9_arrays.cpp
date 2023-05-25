@@ -168,19 +168,38 @@ void swapAlt(int arr[], int n){
     for(int i=0; i+1<n; i+=2){
         swap(arr[i], arr[i+1]);
     }
-    // to print the array
+    
+
+};
+void printArray(int arr[], int n){
+// to print the array
     for(int i=0; i<n; i++){
         cout<< arr[i]<<" ";
     }
-
-};
+    cout<<endl;
+}
 
 int main()
 {
 int num[]={3,4,7,85,9};
 int num2[]={3,4,7,85,9,2};
-
-cout << swapAlt(num,5)<<endl;
-cout << swapAlt(num2,6)<<endl;
+swapAlt(num,5);
+printArray(num,5);
+swapAlt(num2,6);
+printArray(num2,6);
 
 }*/
+
+/* 
+ P-5 CodeStudio - find unique element 
+ link- https://www.codingninjas.com/codestudio/problems/find-unique_625159?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1
+ M-1 & M-2 (M-2 short and preffered
+            Note- a^a=0; and a^0=0; these a^b^a^b^c etc get stored in ans variable and a-a and b-b get xored to 0 then c get xored with 0 to give c hence, ans=c)
+ */
+/*
+P-6 Leetcode 1207 unique no of occurences
+*/
+/*
+P-7 CodeStudio duplicte elemnt in array
+link- https://www.codingninjas.com/codestudio/problems/duplicate-in-array_893397?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1
+*/
