@@ -216,3 +216,17 @@ Link- https://www.codingninjas.com/codestudio/problems/intersection-of-2-arrays_
 
 M-1 & M-2(more optimized)
 */
+
+/*
+P-9 CodeChef Pair sum
+Link- https://www.codingninjas.com/codestudio/problems/pair-sum_697295?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1
+
+This line is for misleading purpose--
+In case two pairs have same first element then the pair with smaller second element should come first.
+-- if two pairs have same first value then there second value also will be same since, their sum is same and we know a+b=c if a1=a2 and c1=c2 then b1 has to be equal to b2
+*/
+
+/*
+P-10 CodeChef 3 sum
+lik-  https://www.codingninjas.com/codestudio/problems/triplets-with-given-sum_893028?source=youtube&campaign=LoveBabbar_Codestudiovideo1&utm_source=youtube&utm_medium=affiliate&utm_campaign=LoveBabbar_Codestudiovideo1
+*/
