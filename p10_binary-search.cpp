@@ -1,3 +1,5 @@
+// P=1 Binary search
+/*
 #include<iostream>
 using namespace std;
 
@@ -25,6 +27,7 @@ int odd[5]={2,4,5,8,10};
 cout<< binarySearch(even,6,10)<<endl;
 cout<< binarySearch(odd,5,10)<<endl;
 }
+*/
 // here,theprogram is returning index of searched element if present
 //  mid= (start+end)/2 but If start and end are near or equal to INT_MAX then sum of start and end will overflow and we will get different result from expected due to circular property, hence we use a modified veson of the same formula 
 // i.e. start + (end-start)/2
@@ -50,4 +53,18 @@ in worst case-
 since max possible iterations= k ==> TC= O(logn)
 
 
+*/
+
+/*
+P-2 codestudio First and last occurance of an element in an array
+Link-https://www.codingninjas.com/codestudio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549?source=youtube&campaign=love_babbar_codestudio2&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio2
+
+here, we divide yhe problem into two parts, to find first el we binary search in left pat of array  and to find out last element we search in right part of array
+*/
+/*
+P-3 find total no.of occurence of a praticular element
+--similar approach to as thr above prob. , Total = lastIndex- firstIndex + 1
+*/
+/*
+P-4 LC 852 find peak of mountain array
 */
