@@ -841,7 +841,7 @@ while(i<=2*n-1){
         */
 
 //pattern 26
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -867,7 +867,7 @@ while(i<=2*n-1){
     cout<<endl;
 };
 } 
-*/
+
 // line 818 - x= n- (i-n) => 2n-i
 /* o/p= for n=5
           * * * * *

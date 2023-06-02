@@ -66,5 +66,66 @@ P-3 find total no.of occurence of a praticular element
 --similar approach to as thr above prob. , Total = lastIndex- firstIndex + 1
 */
 /*
-P-4 LC 852 find peak of mountain array
+P-4 LC 852 find peak of mountain array M-1 submitted but M-2 is better and preffered
+M-2--
+class Solution {
+public:
+    int peakIndexInMountainArray(vector<int>& arr) {
+        int s=0,e=arr.size()-1,m;
+        while(s<e){
+            m=s+(e-s)/2;
+            if(arr[m]<arr[m+1]){
+                s=m;
+            }
+           else{
+                e=m;
+            }
+        }
+         return s;
+    }
+};
+in this method our goal is singeling out the result element
+you can return s or e
+LC fault, hence only M-1 submitted
+Graph- images\Peak of mountain array.png
+*/
+
+
+// P-5 Find pivot element/lowest no in a sorted rotated array
+/*
+#include<iostream>
+using namespace std;
+int pivot(int arr[],int n){
+    int s=0,e=n-1,m;
+    while(s<e){
+        m=s+(e-s)/2;
+        if(arr[m]>=arr[0]){
+            s=m+1;
+        }
+        else{
+            e=m;
+        }
+    }
+    return arr[s];
+}
+int main()
+{
+int nums[8]={4,5,1,2,3};
+cout<<pivot(nums,8)<<endl;
+}
+*/
+/*
+In left rotation, the elements of the array are shifted to the left by a certain number of positions, and the elements that “fall off” the left end of the array are added to the right end of the array. For example, if we have an array [1, 2, 3, 4, 5] and we left rotate it by 2 positions, we would get the array [3, 4, 5, 1, 2].
+
+In right rotation, the elements of the array are shifted to the right by a certain number of positions, and the elements that “fall off” the right end of the array are added to the left end of the array. For example, if we have an array [1, 2, 3, 4, 5] and we right rotate it by 2 positions, we would get the array [4, 5, 1, 2, 3].
+
+Graph- images\pivot.png
+you can return s or e
+*/
+
+/*
+P-6 Search in Rotated Sorted array
+Link- https://www.codingninjas.com/codestudio/problems/search-in-rotated-sorted-array_1082554?source=youtube&campaign=love_babbar_codestudio2&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio2
+
+Here, we first find out pivot element,then we binary search in one of the two lines  i.e. from 0 to p-1 and form p to n-1 based on where the key lies using an if condition
 */
