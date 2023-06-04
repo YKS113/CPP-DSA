@@ -129,3 +129,55 @@ Link- https://www.codingninjas.com/codestudio/problems/search-in-rotated-sorted-
 
 Here, we first find out pivot element,then we binary search in one of the two lines  i.e. from 0 to p-1 and form p to n-1 based on where the key lies using an if condition
 */
+
+/*
+P-7 sqrt of a number using binary search
+LC-69
+*/
+
+// P-8 sqrt of no. upto a precision
+/*
+#include<iostream>
+using namespace std;
+int mySqrtInt(int x) {
+       if(x==0){
+           return 0;
+       }
+       int s=1,e=x,m,ans;
+       while(s<=e){
+           m=s+(e-s)/2;
+           if(m==x/m){
+               ans= m;
+               break;
+           }
+          if(m>x/m){
+               e=m-1;
+               ans=e;
+           }
+           else{
+               s=m+1;
+           }
+       }
+       return ans;
+    }
+double sqrtPrecise(int num,int temp,int precision){
+    double factor=1;
+    double ans=temp;
+    for(int i=1;i<=precision;i++){
+        factor=factor/10;
+        for(double j=ans;j*j<num;j=j+factor){
+            ans=j;
+        }
+    }
+    return ans;
+
+}
+int main()
+{
+int num,temp;
+cout<<"Enter the no."<<endl;
+cin>>num;
+temp=mySqrtInt(num);
+cout<<sqrtPrecise(num,temp,3)<<endl;
+}
+*/

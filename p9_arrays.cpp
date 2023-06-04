@@ -239,3 +239,12 @@ link- https://www.codingninjas.com/codestudio/problems/sort-0-1_624379
 P-12 Codechef Sort 0 1 2
 link- https://www.codingninjas.com/codestudio/problems/sort-0-1-2_631055
 */
+/*
+P-13 LC-121 best time to buy and sell stock
+*/
+/*
+P-14 LC-122 best time to buy and sell stock-II
+
+solved using concept of local minima and local maxima 
+watch anuj bhaiya video for ref
+*/
