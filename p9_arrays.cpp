@@ -238,6 +238,8 @@ link- https://www.codingninjas.com/codestudio/problems/sort-0-1_624379
 /*
 P-12 Codechef Sort 0 1 2
 link- https://www.codingninjas.com/codestudio/problems/sort-0-1-2_631055
+
+since mid is moving faster than start (i.e.mid moves when mid==0 & also when mid==1 but start moves only when mid==0 ),even if mid goes ahead leaving 2 at its place(whwn swapped with start) then at some point start will come on its place and swap it with latest mid
 */
 /*
 P-13 LC-121 best time to buy and sell stock
