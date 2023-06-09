@@ -185,14 +185,13 @@ cout<<sqrtPrecise(num,temp,3)<<endl;
 /*
 P-9 Book allocation 
 link-https://www.codingninjas.com/codestudio/problems/allocate-books_1090540
-
+TN- O(nlogn)
 for ref- love babbar video
 */
 /*
 P-10 Painters partitin problem 
 
-link- https://www.codingninjas.com/codestudio/problems/painter's-partition-problem_1089557?source=youtube&campaign=love_babbar_codestudio2&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio2
-
+link- https://www.codingninjas.com/codestudio/problems/painter-s-partition-problem_1089557?
 similar to above prob
 */
 
