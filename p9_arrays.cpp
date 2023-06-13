@@ -281,4 +281,18 @@ cases-[4,5,6,1,2,3] sorted & rotated here sorted order breaks 1 times at 6-1
 /*
 P-17 sum of 2 arrays
 link- https://www.codingninjas.com/codestudio/problems/sum-of-two-arrays_893186?utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_4
+
+cases-
+1)     12345
+       12345
+
+2)     12345
+         356
+
+3)       356
+       12345
+
+4)     only carry remains at end
+
+
 */
