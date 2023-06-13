@@ -127,6 +127,11 @@ cout << reverse(num2,6)<<endl;
 //      {2,9,85,7,4,3}
 // The function std::swap() is a built-in function in the C++ Standard Template Library (STL) which swaps the value of two variables.
 
+/*
+P-3 Extra
+Link- https://www.codingninjas.com/codestudio/problems/reverse-the-array_1262298?utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio3
+*/
+
 // P-4 M-1 swap alternate elements/ adjacent elements
 /*
 #include<iostream>
@@ -216,6 +221,9 @@ Link- https://www.codingninjas.com/codestudio/problems/intersection-of-2-arrays_
 
 M-1 & M-2(more optimized)
 */
+/*
+P-9 Xtra LC-88 Merge two arrays
+*/
 
 /*
 P-9 CodeChef Pair sum
@@ -242,6 +250,9 @@ link- https://www.codingninjas.com/codestudio/problems/sort-0-1-2_631055
 since mid is moving faster than start (i.e.mid moves when mid==0 & also when mid==1 but start moves only when mid==0 ),even if mid goes ahead leaving 2 at its place(whwn swapped with start) then at some point start will come on its place and swap it with latest mid
 */
 /*
+Xtra - LC-283 move zeroes to end
+*/
+/*
 P-13 LC-121 best time to buy and sell stock
 */
 /*
@@ -249,4 +260,25 @@ P-14 LC-122 best time to buy and sell stock-II
 
 solved using concept of local minima and local maxima 
 watch anuj bhaiya video for ref
+*/
+
+/*
+P-15 LC-189 Rotate array
+note that in right rotation of array if we rotate an array by k steps that means 
+arr[i+k]=arr[i] and when i+k >=n+1 then we have to start from front for this, we make use a proprty of % operator i.e. x % n =y where, 0<=y<=n-1
+*/
+
+/*
+P-16 LC-1752 check if array is Rotated and sorted
+cases-[4,5,6,1,2,3] sorted & rotated here sorted order breaks 1 times at 6-1 
+      [1,2,3,4,5,6] sorted & rotated(by 6 or0 steps) here sorted order breaks 0 times
+      [4,5,6,1,2,8] not sorted & rotated here sorted order breaks 2 times at 6-1,2-8
+      [1,1,1,1,1,1,] edge case sorted & rotated here sorted order breaks 0 times
+      hence, our count should be 0 or 1 i.e. count<=1
+
+*/
+
+/*
+P-17 sum of 2 arrays
+link- https://www.codingninjas.com/codestudio/problems/sum-of-two-arrays_893186?utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_4
 */
