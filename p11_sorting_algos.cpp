@@ -52,7 +52,7 @@ It's an Adaptive algo
 It's a stable sorting algo-doesn't change the order of occurence of repeated elements
 eg. [23',12',4,6,12*,23*] ' => first, * => second
 o/p [4,6,12',12*,23',23*]
-    since, repeated elments come adjacent and are not swapped so first occuring elements remain first and last occuring remain last
+    since, for repeated elments 2nd elemnetis inserted next to first elemnt because loop breaks for arr[j]=temp 
 
 
 Use- When array size is small and you've space constaints

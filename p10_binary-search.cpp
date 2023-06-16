@@ -66,27 +66,10 @@ P-3 find total no.of occurence of a praticular element
 --similar approach to as thr above prob. , Total = lastIndex- firstIndex + 1
 */
 /*
-P-4 LC 852 find peak of mountain array M-1 submitted but M-2 is better and preffered
-M-2--
-class Solution {
-public:
-    int peakIndexInMountainArray(vector<int>& arr) {
-        int s=0,e=arr.size()-1,m;
-        while(s<e){
-            m=s+(e-s)/2;
-            if(arr[m]<arr[m+1]){
-                s=m;
-            }
-           else{
-                e=m;
-            }
-        }
-         return s;
-    }
-};
+P-4 LC 852 find peak of mountain array M-1 & but M-2 is better and preffered
+
 in this method our goal is singeling out the result element
 you can return s or e
-LC fault, hence only M-1 submitted
 Graph- images\Peak of mountain array.png
 */
 
