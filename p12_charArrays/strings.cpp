@@ -32,6 +32,9 @@ benefits of string over charArray--
 1.input methods - getline(),push_back,pop_back
 2.dynamicmemory allocation (works as vector for charArray)
 3.can write line instead of single word i.e. can use space,tab (not enter) using getline
+
+
+NOTE-- '' is used for a character & "" is usedfor a string/stream of characters unlike JS hese cannot be used interchangebly.
 */
 
 /* P-1 find length of string
@@ -138,4 +141,20 @@ A for loop can be used to initialize an array with one default value that is not
 for(i = 0; i<10; i++) {
    arr[i] = 5;
 }
+*/
+
+/*
+P-8 replace spaces
+link-- https://www.codingninjas.com/codestudio/problems/replace-spaces_1172172
+Both M-1 & M-2 are IMP
+*/
+
+/*
+P-9 Remove all occrences of a substring
+LC- 1910
+*/
+/*
+P-10 permutations in a string
+LC-567
+sliding window approach
 */
