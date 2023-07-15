@@ -11,7 +11,7 @@ It's an In-place algorithm i.e. An in-place algorithm is an algorithm that does 
 It's an Unstable sorting algo-- changes the order of occurence of repeated elements
 eg. [23',12',4,6,12*,23*] ' => first, * => second
 o/p [4,6,12*,12',23*,23']
-    since, minIndex is updated for every iteration of arr[j]<arr[i], mminIndex takes value of second(last) occurance of repeated element
+    since, minIndex is updated for every iteration of arr[j]<arr[i], minIndex takes value of second(last) occurance of repeated element
     for, multiple occurences resulting order becomes messy
 
 
