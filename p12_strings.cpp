@@ -34,7 +34,7 @@ benefits of string over charArray--
 3.can write line instead of single word i.e. can use space,tab (not enter) using getline
 
 
-NOTE-- '' is used for a character & "" is usedfor a string/stream of characters unlike JS hese cannot be used interchangebly.
+NOTE-- '' is used for a character & "" is usedfor a string/stream of characters unlike JS these cannot be used interchangebly.
 */
 
 /* P-1 find length of string
@@ -43,7 +43,7 @@ using namespace std;
 int length(char name[]){
     int count=0;
     for(int i=0; name[i]!='\0';i++){
-      count++;  
+      count++;
     }
     return count;
 }
@@ -69,7 +69,7 @@ void reverse(char name[],int l){
 int length(char name[]){
     int count=0;
     for(int i=0; name[i]!='\0';i++){
-      count++;  
+      count++;
     }
     return count;
 }
@@ -157,4 +157,14 @@ LC- 1910
 P-10 permutations in a string
 LC-567
 sliding window approach
+*/
+/*
+P-11 remove adjacent duplicates from string
+LC-1047
+actually a stack question
+*/
+/*
+P-11 compress a string
+LC-443
+TC- O(n)
 */
