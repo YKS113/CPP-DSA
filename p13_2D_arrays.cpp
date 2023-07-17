@@ -165,6 +165,6 @@ cout<<maxRow;
 //LC- 74
 //TC- O(log(row*col))
 
-//P-9 Search in 2D array ||
+//P-9 Binary Search in 2D array ||
 //LC- 240
 //TC- O(log(row*col))
