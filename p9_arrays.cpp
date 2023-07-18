@@ -1,3 +1,5 @@
+//Tip- rarely used syntax arr[i] can also be written as i[arr]
+
 //  Find min/ max in an array
 /*
 #include<iostream>

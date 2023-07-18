@@ -68,6 +68,33 @@ cout<<gcd(a,b);
 //Euclidean Algoritm for gcd
 //https://www.codingninjas.com/studio/library/gcd-euclidean-algorithm
 
-//P-4 Modular Exponentiation
+
+//P-4 factorial of very large no. using modulo
+/*
+#include <bits/stdc++.h>
+using namespace std;
+
+// Returns value of n! % p
+int modFact(int n, int p)
+{
+	if (n >= p)
+		return 0;
+
+	int result = 1;
+	for (int i = 1; i <= n; i++)
+		result = (result * i) % p; //here, (a*b)%c==(a%c*b%c)%c is not used, Read-- https://www.geeksforgeeks.org/modulo-1097-1000000007/
+        //OR result = (result * i%p) % p; here, property is used but, since result is always 
+
+	return result;
+}
+
+// Driver program
+int main()
+{
+	int n = 25, p = 29;
+	cout << modFact(n, p);
+	return 0;
+}
+*/
+//P-5 Modular Exponentiation
 //link- https://www.codingninjas.com/studio/problems/modular-exponentiation_1082146
-//video of anuj bhaiya/love babbar
