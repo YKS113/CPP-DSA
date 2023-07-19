@@ -71,6 +71,7 @@ cout<<p<<endl; //prints entire string
 */
 
 //4.for functions
+/*
 #include<iostream>
 using namespace std;
 int func(int *p){
@@ -114,3 +115,21 @@ int arr[5]={1,2,3,4,5};
 cout<<sum(arr,5)<<endl; //here we pass arr i.e. address of first el
 //Tip- we can also send only a part of array to the function e.g. sum(arr+3,5) will print sum from 4 
 }
+*/
+
+//5. double pointers
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+int a=5;
+int *p1=&a;
+int **p2=&p1;//for multilevel ptr int ***p / ****p / ******p / ...etc
+cout<<p1<<endl;
+cout<<p2<<endl;
+cout<<*p1<<endl;
+cout<<*p2<<endl;
+cout<<**p2<<endl;
+}
+*/
