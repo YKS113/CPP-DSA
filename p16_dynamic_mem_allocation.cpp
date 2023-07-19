@@ -74,3 +74,6 @@ delete []p2;
 
 
 }
+
+//5  dynamic memory allocation for 2d arrays
+
