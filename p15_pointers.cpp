@@ -116,7 +116,7 @@ cout<<sum(arr,5)<<endl; //here we pass arr i.e. address of first el
 //Tip- we can also send only a part of array to the function e.g. sum(arr+3,5) will print sum from 4 
 }
 */
-
+//Note- when we give array as parameter func(int arr[]) OR func(int *arr) a ptr is passed but in case of a string func(string str) entire string is passed by value for local scope of that funcn
 //5. double pointers
 /*
 #include<iostream>

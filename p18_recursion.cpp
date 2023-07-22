@@ -219,3 +219,112 @@ int main()
 }*/
 
 //Xtra link-https://www.codingninjas.com/studio/problems/binary-search_972
+
+//P-7 Reverse a string
+/*
+#include<iostream>
+using namespace std;
+void reverse(string &str, int s, int e){ //if only string str is passed it takes it by value, hence reference var is used
+    if(s>e){ 
+        return;
+    }
+    swap(str[s],str[e]);
+    reverse(str,s+1,e-1);  // OR for single ptr method- s++;                     
+                          //                           reverse(str,s,e);
+}
+int main()
+{
+    string str="abcde";
+    int s=0,e=str.size()-1; OR e=str.size()-s-1 to solve using single pointer
+    reverse(str,s,e);
+    cout<<str;
+}*/
+//Xtra- https://www.codingninjas.com/studio/problems/reverse-the-string_799927
+
+//P-8 check palindrome
+/*
+#include<iostream>
+using namespace std;
+bool check(string str, int s, int e){ //no need to pass by ref in this case
+    if(s>e){ 
+        return 1; //notice here, if s has reached beyond e means every str[s]=str[e]
+    }
+    if(str[s]!=str[e]){
+        return 0;
+    }
+    else{
+        return check(str,s+1,e-1);
+    }
+    
+     
+}
+int main()
+{
+    string str="abcba";
+    int s=0,e=str.size()-1;
+    cout<<check(str,s,e);
+}*/
+
+//P-9 find a^b
+/*
+#include<iostream>
+using namespace std;
+int pow(int a,int b){
+    if(b==0){
+        return 1;
+    }
+    int ans=pow(a,b/2);
+    if(b&1){ //b is odd
+    return a*ans*ans;
+    }
+    else{
+        return ans*ans;
+    }
+}
+
+int main()
+{
+int a,b;
+cin>>a>>b;
+cout<<pow(a,b);
+}
+*/
+
+//P-10 Bubble sort
+/*
+#include<iostream>
+using namespace std;
+void sort(int arr[],int n){ //here, already ptr is passed hence no need for ref var
+        if(n==0 || n==1){
+            return;
+        }
+        for(int i=0;i+1<n;i++){
+            if(arr[i]>arr[i+1]){
+                swap(arr[i],arr[i+1]);
+            }
+        }
+        sort(arr,n-1);
+}
+int main()
+{
+int arr[10]={3,2,6,4,1,7,8,10,9,5};
+int n=10;
+sort(arr,n);
+for(int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
+}
+}
+*/
+//similarly can be solved for selection and bubble sorts
+
+//====================================================================================
+
+//P-11 Merge sort --Divide and Merge based algo
+//Link- https://www.codingninjas.com/studio/problems/merge-sort_920442
+//Reff- strivers video
+//TC- O(N*logN) expln- https://g.co/bard/share/810e034c1933
+//SC- O(N)  for every merge a temp vect is created ranging from size 2 initially to size n , hence in worst case it's O(N)
+
+//P-12 Count Inversion
+//link- https://www.codingninjas.com/studio/problems/count-inversions_615
+//ref- strivers video

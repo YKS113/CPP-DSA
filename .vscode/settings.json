@@ -3,6 +3,8 @@
   "files.associations": {
     "ostream": "cpp",
     "vector": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "cmath": "cpp",
+    "complex": "cpp"
   }
 }
