@@ -326,5 +326,36 @@ for(int i=0;i<n;i++){
 //SC- O(N)  for every merge a temp vect is created ranging from size 2 initially to size n , hence in worst case it's O(N)
 
 //P-12 Count Inversion
+//brute force-- double for loops
 //link- https://www.codingninjas.com/studio/problems/count-inversions_615
 //ref- strivers video
+
+//P-13 Quick Sort
+//link- https://www.codingninjas.com/studio/problems/quick-sort_983625
+/*
+TC- O(nlogn)
+Best case- O(nlogn)
+Worst case- O(n^2)
+
+In-place algorithm --no extra space reqd
+Unstable --changes position of repeting elements
+
+Quick sort is better than merge sort --https://www.geeksforgeeks.org/quicksort-better-mergesort/
+*/
+
+//P-12 subsets
+//LC- 78
+
+//P-13 substrings
+//link- https://www.codingninjas.com/studio/problems/subsequences-of-string_985087
+
+//P-14 Phone keypad
+//LC- 17
+
+//P-15 Permutations of astring
+//Link- https://www.codingninjas.com/studio/problems/permutations-of-a-string_985254
+//P-16 Permutations of nums array
+//LC-46
+
+//P-16 Rat in a maze
+//Link- https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1

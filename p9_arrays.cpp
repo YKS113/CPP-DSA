@@ -303,3 +303,6 @@ cases-
 //LC- 53
 //TC- O(n), 
 //in brute force, using nested loop, finding each subarray and respective maxSum takes O(n^2)
+
+//P-19 no of splits
+//LC- 2270
