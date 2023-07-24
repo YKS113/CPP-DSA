@@ -1,1 +1,2 @@
- // p++;
+int health;
+    // int level;
