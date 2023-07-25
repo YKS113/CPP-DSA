@@ -71,6 +71,7 @@ int main()
 
 /*getters & setters- private properties can be accessed by objects with the help of some public functions, they are called getters and setters
 */
+/*
 #include<iostream>
 using namespace std;
 class Hero{
@@ -91,4 +92,88 @@ int main()
     Hero h1;
     cout<<h1.getHealth()<<endl; //will give garbge value
     cout<<h1.setLevel(50)<<endl;
-}
+}*/
+
+/*
+During creating an object i.e. at Hero h1; statement,a constructor is called by compiler i.e. h1.Hero() this statement is executed, it has no return type, its name is same as that of class name
+It is automatically created during class creation,but if we want we can can also create one/many
+When we create a constructor by ourselves, the defaultly created constructor is deleted and replaced by the one/many created by user
+*/
+/*#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+    Hero(){        //note, no data type is defined before its declaration, since it doesnt return anything
+        cout<<"Constructor called"<<endl;
+    }
+};
+int main()
+{
+Hero h1;
+}*/
+
+//parameterized constucter
+/*
+#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+    // Hero(int health){   //In this eg, both parameter and data member have same name, we use this keyword in such cases
+    //     health=health;
+    // }
+    Hero(int health){
+        this->health=health; //this has address of current object, hence, this.health is data member health of object say h1, and another health is input health from parameter
+
+        cout<<"from constructor"<<this<<endl;
+    }
+};
+int main()
+{
+Hero h1(10);
+cout<< &h1<<endl;
+}*/
+
+//Copy constructor-- copies one objects data member values into another object
+/*#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+    char level;
+    Hero(int health,char level){
+        this->health=health;
+        this->level=level;
+    }
+};
+int main()
+{
+    Hero h1(70,'C');
+    Hero h2(h1);
+    cout<<h2.health<<" "<<h2.level<<endl;
+    }*/
+
+//we can also write a copy constuctor
+
+#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+    char level;
+    Hero(int health,char level){
+        this->health=health;
+        this->level=level;
+    }
+    Hero(Hero &temp){ //temp is by ref and not by value, if passed by value it will create copy ofobject which will call cpy constructor, which will again create cpy and so on this will create a hell loop
+        this->health=temp.health;
+        this->level=temp.level;
+    }
+};
+int main()
+{
+    Hero h1(70,'C');
+    Hero h2(h1);
+    cout<<h2.health<<" "<<h2.level<<endl;
+    }
