@@ -150,12 +150,13 @@ class Hero{
 int main()
 {
     Hero h1(70,'C');
-    Hero h2(h1);
+    Hero h2(h1); //M-2 Hero h2=h1;
     cout<<h2.health<<" "<<h2.level<<endl;
     }*/
 
 //we can also write a copy constuctor
 
+/*
 #include<iostream>
 using namespace std;
 class Hero{
@@ -177,3 +178,73 @@ int main()
     Hero h2(h1);
     cout<<h2.health<<" "<<h2.level<<endl;
     }
+*/
+//Shallow copy and deep copy, default copy constructor makes a shallow cpy of the object i.e. data members of both objects point at same memory locn i.e. change in a data member of one object will also change that data member of its copy              whereas, in deep copy we crete a seperate data structure for the data members
+/*
+#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health=30;
+    Hero{
+        cout<<"constructor called"<<endl;
+    }
+    Hero(Hero &temp){
+        int h=temp.health;
+        this->health=h;
+    }
+};
+int main()
+{
+    Hero h1;
+    cout<<h1.health<<endl;
+    Hero h2= Hero(h1);
+    h2.health=40;
+    cout<<h1.health<<endl;
+    cout<<h2.health<<endl;
+}*/
+
+//copy assignment operator if we create 2 objects of same class, Hero a(40, 'C') and Hero b(30, 'D') and if we write a=g; then a.health=b.health; a.level=b.level; these instructions will be performed and entire object b will be copied into object a
+
+/* Destructor
+When the scope of an object is over, i.e.
+int main(){
+    Hero h1;
+} (at this line, the scope of h1 ends, hence its memory is deallocated at this point by destructor)
+a destructor is called by compiler, it has no return type, its name is same as that of class name
+It is automatically created during class creation,but if we want we can can also create one
+When we create a destructor by ourselves, the defaultly created destructor is deleted and replaced by the one created by user
+*/
+/*#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+    ~Hero(){ //~ is used to distinguish it from constructor
+        cout<<"destructor called"<<endl;
+    }
+};
+int main()
+{
+    Hero h1;
+    h1.health=90;
+    cout<<h1.health<<endl;
+}*/
+
+//const keyword -https://www.geeksforgeeks.org/const-keyword-in-cpp/
+
+//static data member => a data member which is independent of object and universally same for all objects of the class is called static data member ; they do not have this keyword  ; static functions can access only to static properties(since, only those are universal)
+#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+    static int timeToComplete;  //syntax
+};
+int Hero::timeToComplete=80;   //syntax
+int main()
+{   
+    cout<<Hero::timeToComplete<<endl; //we can access it without creating an object
+    Hero h1;
+    cout<<h1.timeToComplete<<endl;  //can be accessed from object also; not recommended
+}
