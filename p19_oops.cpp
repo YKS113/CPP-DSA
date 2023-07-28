@@ -234,6 +234,7 @@ int main()
 //const keyword -https://www.geeksforgeeks.org/const-keyword-in-cpp/
 
 //static data member => a data member which is independent of object and universally same for all objects of the class is called static data member ; they do not have this keyword  ; static functions can access only to static properties(since, only those are universal)
+/*
 #include<iostream>
 using namespace std;
 class Hero{
@@ -247,4 +248,6 @@ int main()
     cout<<Hero::timeToComplete<<endl; //we can access it without creating an object
     Hero h1;
     cout<<h1.timeToComplete<<endl;  //can be accessed from object also; not recommended
-}
+}*/
+
+//4 Pillars of OOPS-- https://www.codingninjas.com/studio/guided-paths/basics-of-c/content/118817/offering/1382190
