@@ -250,4 +250,27 @@ int main()
     cout<<h1.timeToComplete<<endl;  //can be accessed from object also; not recommended
 }*/
 
+//Dynamic object creation
+#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+};
+int main()
+{
+Hero h1; //static obj creation
+Hero *h2= new Hero; //Dynamic obj creation on the heap
+cout<<(*h2).health<<endl; //accessing dynamically created obj using derefrencing operator * OR
+cout<<h2->health<<endl;
+}
+/*Difference between Dot(.) and Arrow(->) operator:  
+
+The Dot(.) operator is used to normally access members of a obj using its name.
+The Arrow(->) operator exists to access the members of obj using pointers (address)
+this keyword gives address of the current obj
+.*/
+
+
+
 //4 Pillars of OOPS-- https://www.codingninjas.com/studio/guided-paths/basics-of-c/content/118817/offering/1382190

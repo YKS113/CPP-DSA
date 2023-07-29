@@ -77,3 +77,8 @@ delete []p2;
 
 //5  dynamic memory allocation for 2d arrays
 
+//https://www.geeksforgeeks.org/memory-layout-of-c-program/
+//https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
+//https://g.co/bard/share/5f342fc6a16b
+//https://g.co/bard/share/83610a863930
+

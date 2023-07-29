@@ -306,3 +306,6 @@ cases-
 
 //P-19 no of splits
 //LC- 2270
+
+//P-20 Pouring problem
+//Link- https://www.geeksforgeeks.org/find-water-in-a-glass/
