@@ -1,2 +1,1 @@
-int health;
-    // int level;
+delete Node *temp;

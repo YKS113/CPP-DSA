@@ -22,22 +22,100 @@ void insertAtHead(Node* &head, int data){ //& is used for referencing variable
     head=temp;                 //head now points to newly added node and             this reflects in main funcn, since reference var is used
 }
 //==================================================================================
+//printing a linked list
+void printNode(Node* &head){//no need of &,still can write for consistncy in writing
+    Node* temp=head;
+while(temp!=0){
+    cout<<temp->data<<" ";
+    temp=temp->next;
+}
+}
+//==================================================================================
+//insert at tail
+void insertAtTail(Node* &tail, int data){
+    Node* temp= new Node(data);
+    tail->next=temp;
+    tail=temp;
+}
+//==================================================================================
+//insert at mid
+void inserAtMid(Node* &head, int data, int n){ //insert at nth node
+    if(n==0){//edge case, since for n=0, we dont have beforemid
+        insertAtHead(head,data);
+        return;
+    }
+    Node* temp= new Node(data);
+    Node* mid=head;
+    Node* beforeMid;
+    for(int i=0;i<n;i++){
+        beforeMid=mid;
+        mid=mid->next;
+    }
+    beforeMid->next=temp;
+    temp->next=mid;
+}
+//===================================================================================
+//delete node
+void deleteNode(Node* &head,int n){//delete nth node
+    if(n==0){
+        Node* temp=head;
+        head=head->next;
+        delete temp;
+        return;
+    }
+    Node* temp=head;
+    Node* beforetemp;
+    for(int i=0;i<n;i++){
+        beforetemp=temp;
+        temp=temp->next;
+    }
+    beforetemp->next=temp->next;
+    delete temp;
 
+}
 
 };
 int main()
 {
-Node *node1= new Node(60); 
+/*Node *node1= new Node(60); 
 cout<<node1->data<<endl;
 cout<<node1->next<<endl;
 //===============================================================================
 Node* head= node1; //make a head pointer, pointing to first node
 head->insertAtHead(head,50);
 //===============================================================================
-//printing a linked list
-Node* temp=head;
-while(temp!=0){
-    cout<<temp->data<<endl;
-    temp=temp->next;
-}
+head->printNode(head);
+//===============================================================================*/
+
+Node* node1=new Node(50);
+Node* head=node1;
+Node* tail=head;
+head->insertAtTail(tail,60);
+head->printNode(head);
+cout<<endl;
+//================================================================================
+head->insertAtTail(tail,70);
+head->insertAtTail(tail,80);
+head->insertAtTail(tail,90);
+head->insertAtTail(tail,100);
+
+head->inserAtMid(head,75,3);
+head->printNode(head);
+cout<<endl;
+head->inserAtMid(head,40,0); //at first node
+head->printNode(head);
+cout<<endl;
+head->inserAtMid(head,110,8); //after last node
+head->printNode(head);
+cout<<endl;
+//==================================================================================
+head->deleteNode(head,5);
+head->printNode(head);
+cout<<endl;
+head->deleteNode(head,7);
+head->printNode(head);
+cout<<endl;
+head->deleteNode(head,0);
+head->printNode(head);
+cout<<endl;
 }
