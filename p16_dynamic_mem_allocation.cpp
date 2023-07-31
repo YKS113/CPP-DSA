@@ -58,7 +58,7 @@ int main()
 //to tackle this, and allocate mem dynamically during runtime, we take help of heap, we can use 'new' keyword for mem allocn in heap, but we cannot assign a name to it, t returns only address of mem locn, hence we use pointers
 int n;
 cin>>n;
-int *p= new int; //for allocating a variable in heap
+int *p= new int; //for allocating a variable in heap 
 int *p2=new int[n];
 int sum=0;
 for(int i=0;i<n;i++){
@@ -67,8 +67,8 @@ for(int i=0;i<n;i++){
 }
 cout<<sum<<endl;
 
-
-//Note- in stack, memory is freed after execution of funcn but mem created in heap is not freed automatically, it needs to be freed manually using delete keyword
+//var is created in heap but its ptr is created in stack
+//Note- in stack, memory is freed after execution of funcn but mem created in heap is not freed automatically, it needs to be freed manually using delete keyword ; ptr to this var is not deleted by delete keyword, it remains a wild ptr, and gets deleted 
 delete p;
 delete []p2;
 
