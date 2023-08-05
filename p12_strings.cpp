@@ -158,6 +158,7 @@ P-10 permutations in a string
 LC-567
 sliding window approach
 */
+//Xtra- check if two strings are anagrams of each other
 /*
 P-11 remove adjacent duplicates from string
 LC-1047

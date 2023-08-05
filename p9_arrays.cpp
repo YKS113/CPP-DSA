@@ -306,6 +306,5 @@ cases-
 
 //P-19 no of splits
 //LC- 2270
+//Xtra- find no of times, two parts of an array have equal sum / first parst sum is less than second part sum
 
-//P-20 Pouring problem
-//Link- https://www.geeksforgeeks.org/find-water-in-a-glass/

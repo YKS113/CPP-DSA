@@ -315,7 +315,7 @@ for(int i=0;i<n;i++){
 }
 }
 */
-//similarly can be solved for selection and bubble sorts
+//similarly can be solved for selection and insrtn sorts
 
 //====================================================================================
 
