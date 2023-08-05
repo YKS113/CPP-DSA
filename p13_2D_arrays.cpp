@@ -168,3 +168,6 @@ cout<<maxRow;
 //P-9 Binary Search in 2D array ||
 //LC- 240
 //TC- O(log(row*col))
+
+//P-10 Pouring problem
+//Link- https://www.geeksforgeeks.org/find-water-in-a-glass/

@@ -56,7 +56,7 @@ while(n!=0){
 cout<<ans<<endl;
 } */
 
-//3. convert decimal(+ve) into binary M-2
+//3. convert decimal(+ve) into binary M-2,but M-1 prffered,it involves bitwise op instead of arithmatic oprtres which are more costly
 /* #include<iostream>
 #include<math.h>
 using namespace std;
@@ -73,31 +73,31 @@ while(n!=0){
    i++;
 }
 cout<<ans<<endl;
-}
- */
-//4. convert decimal(-ve) into binary ????????
-
+}*/
+ 
+//4. convert decimal(-ve) into binary 
+//same as above but, find binary ans for +ve no & do 2's complement on o/p ans
 
 
 //5. convert binary into decimal
 
-#include<iostream>
-#include<math.h>
-using namespace std;
+// #include<iostream>
+// #include<math.h>
+// using namespace std;
 
-int main(){
+// int main(){
 
-int n,i,digit,ans;
-cin>>n;
-i=0,ans=0;
-while(n!=0){
-   digit=n%10;
-   ans=(digit* pow(2,i))+ans;
-   n=n/10;
-   i++;
-}
-cout<<ans<<endl;
-}
+// int n,i,digit,ans;
+// cin>>n;
+// i=0,ans=0;
+// while(n!=0){
+//    digit=n%10;
+//    ans=(digit* pow(2,i))+ans;
+//    n=n/10;
+//    i++;
+// }
+// cout<<ans<<endl;
+// }
 
 //6. reverse integer (leetcode)
 //7. Complement of Base 10 Integer (lt)
