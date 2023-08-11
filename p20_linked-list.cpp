@@ -350,3 +350,70 @@ int main()
 //LC- 876
 //M-1 simple TC- O(n)
 //M-2 Fast pointer approach-- It involves two ptrs a fast and slow, fast moves two blocks while slow moves one block in one iteration, by the time fast ptr completes the traversal, slow ptr reaches mid.  TC- O(n/2)
+
+//P-3 Reverse LL in group of k
+
+//P-4 check if LL is circular, (consider empty list also as circular)
+
+/*************************************************
+        Following is the structure of class Node:
+        #include <bits/stdc++.h> 
+        class Node{
+        public:
+            int data;
+            Node* next;
+            
+            Node(int data){
+                this->data = data;
+                this->next = NULL;
+            }
+            
+        }
+**************************************************/
+/*
+bool isCircular(Node* head){
+    if(head==NULL){// edge case
+        return 1;
+    }
+    Node* first = head;
+    Node* curr=first->next; //if started from curr, while loop will not start, hence                    start with curr->next
+    while(curr!=first){//this logic for both LL length=1 & >1
+        if(curr==NULL){
+            return 0;
+        }
+        curr=curr->next;
+    }
+    return 1;
+}
+
+//M-2 using maps, this Method has more SC, hence not preferred
+bool isCircular(Node* head){
+    unordered_map<Node*, bool> m;
+    Node* curr=head;
+    while(curr!=NULL){
+        if(m[curr]==0){
+            m[curr]=1;
+        }
+        else{
+            return 1;
+        }
+        curr=curr->next;
+    }
+    return 0;
+}
+*/
+
+//P-5 detect and remove loop
+//Link- https://www.codingninjas.com/studio/problems/interview-shuriken-42-detect-and-remove-loop_241049
+//Image- images\find loop in LL.jpg
+//P-6 given a circular linked list, break it from middle and make two circular LL
+//approach- using slow-fast ptrs, find mid, then slow(mid)->next=head and fast(tail)->next= nodAfterSlow;
+
+//P-7 Remove duplicates from sorted LL
+//LC- 83
+
+//P-8 Remove duplicates from unsorted LL
+//Link- https://www.codingninjas.com/studio/problems/remove-duplicates-from-unsorted-linked-list_1069331
+
+//P-9 sort 0,1,2 in a LL
+//Link- https://www.codingninjas.com/studio/problems/sort-linked-list-of-0s-1s-2s_1071937

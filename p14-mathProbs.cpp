@@ -68,6 +68,9 @@ cout<<gcd(a,b);
 //Euclidean Algoritm for gcd
 //https://www.codingninjas.com/studio/library/gcd-euclidean-algorithm
 
+//P-4 find LCM of two nos
+//Link- https://www.codingninjas.com/studio/problems/lcm_4604173
+//fact- lcm(a,b)*gcd(a,b)=a*b
 
 //P-4 factorial of very large no. using modulo
 /*

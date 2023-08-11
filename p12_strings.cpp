@@ -142,7 +142,10 @@ for(i = 0; i<10; i++) {
    arr[i] = 5;
 }
 */
-
+/*
+P-8- Custom Sort String
+Link- https://www.codingninjas.com/studio/problems/specific-order_1102295?leftPanelTab=1
+*/
 /*
 P-8 replace spaces
 link-- https://www.codingninjas.com/codestudio/problems/replace-spaces_1172172
@@ -169,3 +172,7 @@ P-11 compress a string
 LC-443
 TC- O(n)
 */
+
+//https://g.co/bard/share/4dab91c5e729
+//https://www.tutorialspoint.com/what-is-the-use-of-cin-ignore-in-cplusplus
+

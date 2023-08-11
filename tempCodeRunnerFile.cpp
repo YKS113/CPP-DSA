@@ -1,1 +1,1 @@
-delete Node *temp;
+s.erase(first,last);

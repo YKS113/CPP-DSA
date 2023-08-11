@@ -240,7 +240,8 @@ In case two pairs have same first element then the pair with smaller second elem
 P-10 CodeChef 3 sum
 lik-  https://www.codingninjas.com/codestudio/problems/triplets-with-given-sum_893028?source=youtube&campaign=LoveBabbar_Codestudiovideo1&utm_source=youtube&utm_medium=affiliate&utm_campaign=LoveBabbar_Codestudiovideo1
 */
-
+//Xtra- pythagorean triplet in array
+//Link- https://www.codingninjas.com/studio/problems/pythagorean-triplets_797917
 /*
 P 11-Codechef Sort 0 1
 link- https://www.codingninjas.com/codestudio/problems/sort-0-1_624379
