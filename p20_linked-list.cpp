@@ -417,3 +417,23 @@ bool isCircular(Node* head){
 
 //P-9 sort 0,1,2 in a LL
 //Link- https://www.codingninjas.com/studio/problems/sort-linked-list-of-0s-1s-2s_1071937
+
+//P-10 merge 2 sorted LL
+//Link-https://www.codingninjas.com/studio/problems/merge-two-sorted-linked-lists_800332
+
+//P-11 cheeck if LL is palindrome
+//LC- 234
+//M-1 convert LL to array & check if arr is palindrome- TC O(n), SC O(n)
+//M-2 find mid of LL,reverse LL from mid to tail,compare the two parts TC O(n),SC O(1)
+
+//P-12 Add 2 numbers represented by LL
+//Link- https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1
+//first reverse the two inout lists, then add them and make a new list(approach similar to array Q. of same type) then at the end reverse the ans LL
+//TC - O(n+m), SC-O(max(n+m))
+
+//P-13  Clone a linked list with next and random pointer
+//Link- https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
+
+//P-14 Merge Sort Linked List 
+//Link- https://www.codingninjas.com/studio/problems/merge-sort-linked-list_920473?
+//Note-- we preferMerge sort in LL and quick sort in arrays, because accessing random elements in Ll is costly operation which is not the case in arrays
