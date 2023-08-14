@@ -28,7 +28,7 @@ void insertAtHead(Node* &head, int data){ //& is used for referencing variable
 //printing a linked list
 void printNode(Node* &head){//no need of &,still can write for consistncy in writing
     Node* temp=head;
-while(temp!=0){
+while(temp!=NULL){
     cout<<temp->data<<" ";
     temp=temp->next;
 }
@@ -403,9 +403,14 @@ bool isCircular(Node* head){
 }
 */
 
+
+//**************************************************************************************PRO TIP for LL probs- always check for cases- empty list, list with 1 node(in case of circular,2 cases- single node & not circulat, single node circular), list with > 1 node  AND always check if any NULL node is being acceessed for NULL->next like condition, if found, add an if statement there like if(curr!=NULL)                                                      **************************************************************************************
+
+
 //P-5 detect and remove loop
 //Link- https://www.codingninjas.com/studio/problems/interview-shuriken-42-detect-and-remove-loop_241049
 //Image- images\find loop in LL.jpg
+
 //P-6 given a circular linked list, break it from middle and make two circular LL
 //approach- using slow-fast ptrs, find mid, then slow(mid)->next=head and fast(tail)->next= nodAfterSlow;
 
