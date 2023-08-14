@@ -185,3 +185,7 @@ Link-https://www.codingninjas.com/codestudio/problems/aggressive-cows_1082559
 
 for ref- strivers agressive cows
 */
+
+//P-12 chocolate distribution prob
+//https://www.geeksforgeeks.org/chocolate-distribution-problem/
+//Not at all related to above probs

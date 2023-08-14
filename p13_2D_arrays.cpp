@@ -171,3 +171,6 @@ cout<<maxRow;
 
 //P-10 Pouring problem
 //Link- https://www.geeksforgeeks.org/find-water-in-a-glass/
+
+//P-11 Set Matrix Zeroes
+//LC-73

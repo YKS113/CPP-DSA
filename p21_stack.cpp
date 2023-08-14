@@ -13,7 +13,7 @@ int main()
     s.push(4);
     cout<<s.top()<<endl;
     cout<<s.size()<<endl;
-    s.pop();
+    s.pop();//Note- stack pop has no return value
     cout<<s.top()<<endl;
     cout<<s.empty()<<endl;
     s.pop();
@@ -24,7 +24,7 @@ int main()
 */
 
 //implement stack using arrays, by creating a stack class
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 class Stack{
     public:
@@ -52,6 +52,7 @@ class Stack{
     }
     int pop(){
         if(top>=0){
+            //Note- stack pop has no return value, but we can implement if we want
             int temp=arr[top];
             arr[top]=0;
             top--;
@@ -105,8 +106,50 @@ int main()
     s.push(4);
     s.push(4);
     cout<<s.peek()<<endl;
-}
+}*/
 //all operations/methods are happening in O(1)
 
 //P-1 implement 2 stacks using only 1 array
 //Link- https://www.codingninjas.com/studio/problems/two-stacks_983634
+
+//P-2 Reverse a string using stack
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+string str;
+cin>>str;
+stack <char> s;
+for(int i=0;i<str.length();i++){
+    s.push(str[i]);
+}
+string ans="";
+while(!s.empty()){
+    ans.push_back(s.top());
+    s.pop();
+}
+cout<<ans;
+}
+
+//P-3 Delete middle element from stack
+//https://www.codingninjas.com/studio/problems/delete-middle-element-from-stack_985246?leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+
+//P-4 Valid paranthesis
+//https://www.codingninjas.com/studio/problems/valid-parenthesis_795104?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+
+//P-5 Insert An Element At Its Bottom In A Given Stack
+//https://www.codingninjas.com/studio/problems/insert-an-element-at-its-bottom-in-a-given-stack_1171166?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+
+//P-6 Reverse Stack Using Recursion
+//Link- https://www.codingninjas.com/studio/problems/reverse-stack-using-recursion_631875?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+//used two recursions
+
+//P-7 Sort a Stack
+//https://www.codingninjas.com/studio/problems/sort-a-stack_985275?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+
+//P-8   Redundant Brackets
+//https://www.codingninjas.com/studio/problems/redundant-brackets_975473?leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+
+//P-9 Minimum Cost To Make String Valid
+//https://www.codingninjas.com/studio/problems/minimum-cost-to-make-string-valid_1115770?leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+//Note- possible remaining items in stack can be 1) {{{{{ 2) }}}}} 3) }}}}}{{{{{      We, need to reverse (a+1)/2 + (b+1)/2 bracts for making them pairs
