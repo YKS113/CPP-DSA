@@ -153,3 +153,7 @@ cout<<ans;
 //P-9 Minimum Cost To Make String Valid
 //https://www.codingninjas.com/studio/problems/minimum-cost-to-make-string-valid_1115770?leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 //Note- possible remaining items in stack can be 1) {{{{{ 2) }}}}} 3) }}}}}{{{{{      We, need to reverse (a+1)/2 + (b+1)/2 bracts for making them pairs
+
+//P-10 Next Smaller Element
+//https://www.codingninjas.com/studio/problems/next-smaller-element_1112581?topList=love-babbar-dsa-sheet-problems&leftPanelTab=3&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+//Xtra- Prev Smaller Element (similar approach, but loop start from i=0)

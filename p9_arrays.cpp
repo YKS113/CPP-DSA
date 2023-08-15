@@ -234,6 +234,8 @@ Link- https://www.codingninjas.com/codestudio/problems/pair-sum_697295?source=yo
 This line is for misleading purpose--
 In case two pairs have same first element then the pair with smaller second element should come first.
 -- if two pairs have same first value then there second value also will be same since, their sum is same and we know a+b=c if a1=a2 and c1=c2 then b1 has to be equal to b2
+
+Xtra- LC- 1
 */
 
 /*
@@ -243,6 +245,11 @@ lik-  https://www.codingninjas.com/codestudio/problems/triplets-with-given-sum_8
 //Xtra- pythagorean triplet in array
 //Link- https://www.codingninjas.com/studio/problems/pythagorean-triplets_797917
 /*
+
+//P-11 4Sum
+//LC 18
+//same as 3sum, with 1 more loop, since loops are many, try to keep iterations low by skipping repeative elments
+
 P 11-Codechef Sort 0 1
 link- https://www.codingninjas.com/codestudio/problems/sort-0-1_624379
 */
@@ -254,6 +261,8 @@ since mid is moving faster than start (i.e.mid moves when mid==0 & also when mid
 */
 /*
 Xtra - LC-283 move zeroes to end
+
+Xtra - LC 26 Remove duplicates from sorted arr
 */
 /*
 P-13 LC-121 best time to buy and sell stock
@@ -309,3 +318,5 @@ cases-
 //LC- 2270
 //Xtra- find no of times, two parts of an array have equal sum / first parst sum is less than second part sum
 
+//P-20 container with most water
+//LC- 11
