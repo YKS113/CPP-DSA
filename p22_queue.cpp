@@ -23,7 +23,7 @@ int main()
 }*/
 
 //P-1 Implement queue using array
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class Queue{
     public:
@@ -96,3 +96,28 @@ int main()
     q.Pop();
 
 }
+*/
+
+//P-2 Implement circular queue
+//https://www.codingninjas.com/studio/problems/circular-queue_1170058?leftPanelTab=3&campaign=LoveBabbar_Codestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=LoveBabbar_Codestudio
+
+//P-3 Implement deque
+
+//P-3 Implement Queue using Stacks
+//LC- 232
+
+//P-4 Implement Stack using Queues
+//LC- 225
+
+//P-5 Reverse a queue
+//https://practice.geeksforgeeks.org/problems/queue-reversal/1
+
+//P-6 First negative integer in every window of size k
+//sliding wind + queue type Q
+//https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
+
+//P-7 Reverse First K elements of Queue
+//https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1
+
+//P-8 First non-repeating character in a stream
+//https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1

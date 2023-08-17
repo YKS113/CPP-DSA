@@ -320,3 +320,7 @@ cases-
 
 //P-20 container with most water
 //LC- 11
+
+//P-21 Max points you can obtain from cards
+//LC 1423
+//sliding window

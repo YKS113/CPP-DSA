@@ -46,6 +46,9 @@ int& func(int a){
 //Xtra- take similar precaution with pointers also
 
 //4  dynamic memory allocation
+
+//For C language- images\Dynamic_Mem_allocn_in_C
+
 #include<iostream>
 using namespace std;
 int main()
@@ -60,12 +63,14 @@ int n;
 cin>>n;
 int *p= new int; //for allocating a variable in heap 
 int *p2=new int[n];
+int* p3=new int(40);
 int sum=0;
 for(int i=0;i<n;i++){
     cin>>*(p2+i);
     sum+=*(p2+i);
 }
 cout<<sum<<endl;
+cout<<*p3<<endl;
 
 //var is created in heap but its ptr is created in stack
 //Note- in stack, memory is freed after execution of funcn but mem created in heap is not freed automatically, it needs to be freed manually using delete keyword ; ptr to this var is not deleted by delete keyword, it remains a wild ptr, and gets deleted 
