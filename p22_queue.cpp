@@ -116,8 +116,17 @@ int main()
 //sliding wind + queue type Q
 //https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
 
-//P-7 Reverse First K elements of Queue
+//P-7 Sum of minimum and maximum elements of all subarrays of size k.
+//https://www.geeksforgeeks.org/sum-minimum-maximum-elements-subarrays-size-k/
+//Approch- use a deque, if arr[i]>q.front() then, push_front ; if arr[i]<q.back() then, push_back(); now slide the wind, check if prev el of arr was at front or back if yess remove it; also check if new el is max or min, accordingly push it at front/back
+
+//P-8 Reverse First K elements of Queue
 //https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1
 
-//P-8 First non-repeating character in a stream
-//https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
+//P-9 First non-repeating character in a stream
+//https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1b  
+
+//P-10 Interleave the First Half of the Queue with Second Half
+//https://practice.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
+//Xtra- solve above prob using stack only-- soln- store half q in stack, reverse stack then interleave
+

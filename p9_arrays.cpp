@@ -324,3 +324,7 @@ cases-
 //P-21 Max points you can obtain from cards
 //LC 1423
 //sliding window
+
+//P-22 Circular tour
+//https://practice.geeksforgeeks.org/problems/circular-tour-1587115620/1
+
