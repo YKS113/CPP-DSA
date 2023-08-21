@@ -130,3 +130,5 @@ int main()
 //https://practice.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
 //Xtra- solve above prob using stack only-- soln- store half q in stack, reverse stack then interleave
 
+//P-11 N queues in an array
+//https://www.codingninjas.com/studio/problems/n-queue-using-array_1170053

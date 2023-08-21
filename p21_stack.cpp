@@ -157,3 +157,18 @@ cout<<ans;
 //P-10 Next Smaller Element
 //https://www.codingninjas.com/studio/problems/next-smaller-element_1112581?topList=love-babbar-dsa-sheet-problems&leftPanelTab=3&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 //Xtra- Prev Smaller Element (similar approach, but loop start from i=0)
+
+//P-11 Largest Rectangle in Histogram
+//LC 84
+
+//P-11 N stacks in an array
+//https://www.codingninjas.com/studio/problems/n-stacks-in-an-array_1164271?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio11thfeb&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio11thfeb
+
+//P-12 Design a stack that supports getMin() in O(1)
+//https://www.codingninjas.com/studio/problems/design-a-stack-that-supports-getmin-in-o-1-time-and-o-1-extra-space_842465?topList=love-babbar-dsa-sheet-problems?source=youtube&campaign=Codestudio_Lovebabbar&utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Lovebabbar
+
+//P-13 The Celebrity Problem
+//https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1
+
+//P-14  Max Rectangle in Binary Matrix with all 1's
+//https://practice.geeksforgeeks.org/problems/max-rectangle/1
