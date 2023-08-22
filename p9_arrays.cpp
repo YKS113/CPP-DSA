@@ -328,3 +328,8 @@ cases-
 //P-22 Circular tour
 //https://practice.geeksforgeeks.org/problems/circular-tour-1587115620/1
 
+//P-23  Jump Game
+//Lc 55
+
+//P-24 Boyer-Moore Majority Voting Algorithm
+//LC 169
