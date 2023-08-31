@@ -100,6 +100,73 @@ void reverseLevelOrder(Node* root)
         S.pop();
     }
 }
+
+void inorderTraversal(Node* root){
+    Node* temp= root;
+    if(temp==NULL){//base case
+        return;
+    }
+
+    inorderTraversal(temp->left);
+    cout<<temp->data<<" ";
+    inorderTraversal(temp->right);
+
+}
+void preorderTraversal(Node* root){
+    Node* temp= root;
+    if(temp==NULL){//base case
+        return;
+    }
+
+    cout<<temp->data<<" ";
+    preorderTraversal(temp->left);
+    preorderTraversal(temp->right);
+
+}
+void postorderTraversal(Node* root){
+    Node* temp= root;
+    if(temp==NULL){//base case
+        return;
+    }
+
+    postorderTraversal(temp->left);
+    postorderTraversal(temp->right);
+    cout<<temp->data<<" ";
+
+}
+
+void buildFromLevelOrder(Node* &root) {
+    queue<Node*> q;
+
+    cout << "Enter data for root" << endl;
+    int data ;
+    cin >> data;
+    root = new Node(data);
+    
+    q.push(root);
+
+    while(!q.empty()) {
+        Node* temp = q.front();
+        q.pop();
+
+        cout << "Enter left node for: " << temp->data << endl;
+        int leftData;
+        cin >> leftData;
+
+        if(leftData != -1) {
+            temp -> left = new Node(leftData);
+            q.push(temp->left);
+        }
+
+        cout << "Enter right node for: " << temp->data << endl;
+        int rightData;
+        cin >> rightData;
+
+        if(rightData != -1) {
+            temp -> right = new Node(rightData);
+            q.push(temp->right);
+        }
+    }}
 };
 int main()
 {
@@ -108,5 +175,15 @@ int main()
     root=n->buildTree(root);
     n->BreadthFirstSearch(root);
     n->reverseLevelOrder(root);
+    n->inorderTraversal(root); cout<<endl;
+    n->preorderTraversal(root); cout<<endl;
+    n->postorderTraversal(root); cout<<endl;
+    //n->buildFromLevelOrder(root);
    //1 2 4 8 -1 -1 9 -1 -1 5 -1 -1 3 6 -1 -1 7 -1 10 -1 -1
+    /*
+                   1
+              2           3
+            4   5       6   7
+          8   9               10   
+    */
 }
