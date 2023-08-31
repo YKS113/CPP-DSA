@@ -333,3 +333,9 @@ cases-
 
 //P-24 Boyer-Moore Majority Voting Algorithm
 //LC 169
+
+//Prefix sum 
+//https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/
+
+//P-25
+//LC 974. Subarray Sums Divisible by K

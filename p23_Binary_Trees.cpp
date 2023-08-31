@@ -5,7 +5,7 @@ Binary tree- a tree where eachnode can have at most 2 children; starts with a si
 */
 
 //Building a BT
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 class Node {
 public:
@@ -18,7 +18,7 @@ Node(int data){
     this->left=NULL;
     this->right=NULL;
 }
-Node* buildTree(Node* &root){
+Node* buildTree(Node* root){
     cout<<" enter the data"<<endl;
     int data;
     cin>>data;
@@ -36,10 +36,77 @@ Node* buildTree(Node* &root){
 
     return root;
 }
+//This was Depth First Search-- The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
+
+// Breadth first search/ Level order search-- It begins at the root of the tree or graph and investigates all nodes at the current depth level before moving on to nodes at the next depth level.
+void BreadthFirstSearch(Node* root){
+    queue<Node*> q;
+    q.push(root);
+    q.push(NULL);//for printing new level to new line; not mandatory, prog will work without this also
+    
+
+    while(!q.empty()){
+        Node* temp= q.front();
+        q.pop();
+        //for printing new level to new line
+        if(temp==NULL && !q.empty()){//i.e. this level is compleete !q.empty() is imp othrwise prog will enter in infinite loop when q becomes empty at end
+            cout<<endl;
+            q.push(NULL);//marks end of new level
+        }
+        else{
+            cout<<temp->data<<" ";
+            if(temp->left){
+            q.push(temp->left);
+            }
+            if(temp->right) {
+            q.push(temp->right);
+            }
+        }  
+    }
+}
+
+/*Q.  Given a binary tree, print its nodes in reverse level order */
+void reverseLevelOrder(Node* root)
+{
+    stack <Node *> S;
+    queue <Node *> Q;
+    Q.push(root);
+ 
+    // Do something like normal level order traversal order. Following are the
+    // differences with normal level order traversal
+    // 1) Instead of printing a node, we push the node to stack
+    // 2) Right subtree is visited before left subtree
+    while (Q.empty() == false)
+    {
+        /* Dequeue node and make it root */
+        Node* temp = Q.front();
+        Q.pop();
+        S.push(temp);
+ 
+        /* Enqueue right child */
+        if (temp->right)
+            Q.push(temp->right); // NOTE: RIGHT CHILD IS ENQUEUED BEFORE LEFT
+ 
+        /* Enqueue left child */
+        if (temp->left)
+            Q.push(temp->left);
+    }
+ 
+    // Now pop all items from stack one by one and print them
+    while (S.empty() == false)
+    {
+        Node* temp = S.top();
+        cout << temp->data << " ";
+        S.pop();
+    }
+}
 };
 int main()
 {
     Node* root= NULL;
     Node* n=new Node(0);
-    n->buildTree(root);
+    root=n->buildTree(root);
+    n->BreadthFirstSearch(root);
+    n->reverseLevelOrder(root);
+   //1 2 4 8 -1 -1 9 -1 -1 5 -1 -1 3 6 -1 -1 7 -1 10 -1 -1
 }

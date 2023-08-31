@@ -1,1 +1,1 @@
-s.erase(first,last);
+n->BreadthFirstSearch(root);
