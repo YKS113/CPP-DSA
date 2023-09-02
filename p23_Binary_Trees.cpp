@@ -172,12 +172,12 @@ int main()
 {
     Node* root= NULL;
     Node* n=new Node(0);
-    root=n->buildTree(root);
-    n->BreadthFirstSearch(root);
+    root=n->buildTree(root);//TC O(n) SC O(1); if stack size cosidrd, O(h) (h of tree)
+    n->BreadthFirstSearch(root);//TC O(n) SC O(w) (w-max width of tree)
     n->reverseLevelOrder(root);
-    n->inorderTraversal(root); cout<<endl;
-    n->preorderTraversal(root); cout<<endl;
-    n->postorderTraversal(root); cout<<endl;
+    n->inorderTraversal(root); cout<<endl;//TC O(n) SC O(1); -//-
+    n->preorderTraversal(root); cout<<endl;//TC O(n) SC O(1); -//-
+    n->postorderTraversal(root); cout<<endl;//TC O(n) SC O(1); -//-
     //n->buildFromLevelOrder(root);
    //1 2 4 8 -1 -1 9 -1 -1 5 -1 -1 3 6 -1 -1 7 -1 10 -1 -1
     /*
@@ -190,3 +190,9 @@ int main()
 
 //P-1 Count leaf nodes
 //https://www.codingninjas.com/studio/problems/count-leaf-nodes_893055?source=youtube&campaign=LoveBabbar_Codestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=LoveBabbar_Codestudio&leftPanelTab=0
+
+//P-2 find Height/Depth of BT
+//https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1
+
+//P-3 Diameter of a BT
+//https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1
