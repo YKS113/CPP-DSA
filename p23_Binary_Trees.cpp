@@ -172,7 +172,7 @@ int main()
 {
     Node* root= NULL;
     Node* n=new Node(0);
-    root=n->buildTree(root);//TC O(n) SC O(1); if stack size cosidrd, O(h) (h of tree)
+    root=n->buildTree(root);//TC O(n) SC O(1); if stack size cosidrd, O(h) (h of tree) (in case of skewed tree, h=n hence, O(n))
     n->BreadthFirstSearch(root);//TC O(n) SC O(w) (w-max width of tree)
     n->reverseLevelOrder(root);
     n->inorderTraversal(root); cout<<endl;//TC O(n) SC O(1); -//-
@@ -196,3 +196,13 @@ int main()
 
 //P-3 Diameter of a BT
 //https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1
+
+//P-4 check if tree is balanced or not
+// https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
+//This method can also be used to solve P-3
+
+//P-5 Determine if Two Trees are Identical
+//https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1
+
+//P-6 Sum tree
+//https://practice.geeksforgeeks.org/problems/sum-tree/1
