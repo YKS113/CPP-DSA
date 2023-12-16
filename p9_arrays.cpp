@@ -201,10 +201,10 @@ printArray(num2,6);
  P-5 CodeStudio - find unique element OR LC 136
  link- https://www.codingninjas.com/codestudio/problems/find-unique_625159?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1
  M-1 & M-2 (M-2 short and preffered
-            Note- a^a=0; and a^0=0; these a^b^a^b^c etc get stored in ans variable and a-a and b-b get xored to 0 then c get xored with 0 to give c hence, ans=c)
+            Note- a^a=0; and a^0=a; these a^b^a^b^c etc get stored in ans variable and a-a and b-b get xored to 0 then c get xored with 0 to give c hence, ans=c)
  */
 /*
-P-6 Leetcode 1207 unique no of occurences
+P-6 Leetcode 1207 unique no of occurences 
 */
 /*
 P-7 CodeStudio duplicte elemnt in array
