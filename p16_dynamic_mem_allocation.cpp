@@ -53,12 +53,12 @@ int& func(int a){
 using namespace std;
 int main()
 {
-//we know that this is bad practice, since here, array mem is being allocated at runtime instead of compile time, there are two parts of mem stack and heap stack is much smaller and may not have enough space for the large array creation during runtime, but if arr size is known at compile time, stack increases its size.
+//we know that this is bad practice, since here, array mem is being allocated at runtime instead of compile time, there are two parts of mem stack and heap, stack is much smaller and may not have enough space for the large array creation during runtime, but if arr size is known at compile time, stack increases its size.
 // int n;
 // cin>>n;
 // int arr[n];
 
-//to tackle this, and allocate mem dynamically during runtime, we take help of heap, we can use 'new' keyword for mem allocn in heap, but we cannot assign a name to it, t returns only address of mem locn, hence we use pointers
+//to tackle this, and allocate mem dynamically during runtime, we take help of heap, we can use 'new' keyword for mem allocn in heap, but we cannot assign a name to it, it returns only address of mem locn, hence we use pointers
 int n;
 cin>>n;
 int *p= new int; //for allocating a variable in heap 
@@ -73,10 +73,9 @@ cout<<sum<<endl;
 cout<<*p3<<endl;
 
 //var is created in heap but its ptr is created in stack
-//Note- in stack, memory is freed after execution of funcn but mem created in heap is not freed automatically, it needs to be freed manually using delete keyword ; ptr to this var is not deleted by delete keyword, it remains a wild ptr, and gets deleted 
+//Note- in stack, memory is freed after execution of funcn but mem created in heap is not freed automatically, it needs to be freed manually using delete keyword ; ptr to this var is not deleted by delete keyword, it remains a wild ptr, and gets deleted after its parent function pops from stack
 delete p;
 delete []p2;
-
 
 }
 

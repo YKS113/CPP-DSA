@@ -39,7 +39,7 @@ cout<<ans<<endl;
 */
 
 // print all nos from n to 1
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -55,7 +55,7 @@ int main()
 int n;
 cin>>n;
 print(n);
-}*/
+}
 // o/p- 5 4 3 2 1
 // for every function call the respective no is printed; at n==0, control is returned to caller at print(n-1); where n was 1; after that instruction, there is no other instruction so that funcn is cleared from stack and a void return is passed to its caller(i.e. control is returned to caller) at print(n-1) this goes on until entire stack is cleared
 // This is an examople of Tail Recursion-- recursive relation is at end of code
@@ -84,11 +84,16 @@ print(n);
 // P-1 nth Fibonnaci number
 // eg- 0,1,1,2,3,5,8,...
 // LC- 509
+//TC-O(2^n) Using substitutive derivation- https://www.baeldung.com/cs/fibonacci-computational-complexity
+//Using recursion tree- https://g.co/bard/share/3c836526f01a
+//SC O(h)=O(n)
 
 // TC of recursive approaches --https://g.co/bard/share/0cee7ac7aede
 
 // P-2 Count Ways To Reach The N-th Stairs
 // link-https://www.codingninjas.com/studio/problems/count-ways-to-reach-nth-stairs_798650
+
+//LC-1137
 
 // P-3 Say digits
 // eg. for i/p 314 o/p- three one four
@@ -240,7 +245,7 @@ int main()
     cout<<str;
 }*/
 //Xtra- https://www.codingninjas.com/studio/problems/reverse-the-string_799927
-
+ 
 //P-8 check palindrome
 /*
 #include<iostream>
@@ -359,3 +364,7 @@ Quick sort is better than merge sort --https://www.geeksforgeeks.org/quicksort-b
 
 //P-16 Rat in a maze
 //Link- https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
+
+
+
+

@@ -71,6 +71,7 @@ cout<<p<<endl; //prints entire string
 */
 
 //4.for functions
+// a parameter is a variable in a function definition, while an argument is the value passed during function invocation. 
 /*
 #include<iostream>
 using namespace std;
@@ -116,7 +117,7 @@ cout<<sum(arr,5)<<endl; //here we pass arr i.e. address of first el
 //Tip- we can also send only a part of array to the function e.g. sum(arr+3,5) will print sum from 4 
 }
 */
-//Note- when we give array as parameter func(int arr[]) OR func(int *arr) a ptr is passed but in case of a string func(string str) entire string is passed by value for local scope of that funcn
+//Note- when we give array as parameter func(int arr[]) OR func(int *arr) a ptr is passed but in case of a vector/string func(string str) entire vector/string is passed by value for local scope of that funcn, if we want to pass by ref then we can use func(string &str) i.e. refrence var, to be learned in p16.
 //5. double pointers
 /*
 #include<iostream>

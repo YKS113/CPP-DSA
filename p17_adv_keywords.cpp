@@ -18,7 +18,7 @@ double area= pi*r*r;
 cout<<area<<endl;
 
 //soln--
-area=PI*r*r; //we define a macro using #define; the prerocessor replaces all occurrences of the macro name (here, PI) with the definition of the macro (var or a peice of code,here 3.14) in the code and thus no seperate memory is allocated for it.                                                                              Also, unlike global variable macro cannot be changed later in the program            It need not be terminated with ;
+area=PI*r*r; //we define a macro using #define; the prerocessor replaces all occurrences of the macro name (here, PI) with the definition of the macro (value or a peice of code,here 3.14) in the code and thus no seperate memory is allocated for it.                                                                              Also, unlike global variable macro cannot be changed later in the program            It need not be terminated with ;
 cout<<area<<endl;
 
 //Types of macros- https://www.geeksforgeeks.org/macros-and-its-types-in-c-cpp/
@@ -29,6 +29,6 @@ a++; //we can access global variable in any/all funcn of the program, using glob
 cout<<a;
 }
 
-//4. inline funcn
+//4. inline funcn https://www.geeksforgeeks.org/inline-functions-cpp/
 //5. default argument
 //6. comstant var

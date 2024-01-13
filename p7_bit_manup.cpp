@@ -102,3 +102,4 @@ cout<<ans<<endl;
 //6. reverse integer (leetcode- 7)
 //7. Complement of Base 10 Integer (lt 1009)
 //8. power of two (lt)
+//9. LC-10032 https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/

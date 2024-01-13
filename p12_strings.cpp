@@ -119,9 +119,8 @@ cout<< v;
 /*
 P-5 check if given string is a palindrime
 link-- https://www.codingninjas.com/codestudio/problems/check-if-the-string-is-a-palindrome_1062633?utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_5
-
-Xtra-- LC- 125
 */
+
 /*
 P-6 Reverse words in a string
 link- https://www.codingninjas.com/codestudio/problems/reverse-the-order-of-words-in-a-string_1264991
@@ -176,3 +175,4 @@ TC- O(n)
 //https://g.co/bard/share/4dab91c5e729
 //https://www.tutorialspoint.com/what-is-the-use-of-cin-ignore-in-cplusplus
 
+//maps--https://g.co/bard/share/ba48704283a3
