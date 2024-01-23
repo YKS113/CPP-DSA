@@ -342,6 +342,21 @@ int main()
 
 //Similarly can be solved for Doubly Circular linked list- similar to Singly Circular LL, but next ptr of tail node points to head node and prev ptr of head node points to tail node
 
+/*Here are the differences between wild pointers and dangling pointers:
+Wild pointer:
+A wild pointer is an uninitialized pointer. It has not been assigned any value, and it may contain random or garbage data. Dereferencing a wild pointer can lead to unpredictable behavior, such as a crash or a security vulnerability.
+Dangling pointer:
+A dangling pointer is a pointer that points to memory that has already been freed. When you free memory, the operating system reclaims it and can use it for other purposes. If you try to use a dangling pointer after the memory has been freed, you will access invalid memory, which can lead to a crash or a security vulnerability.
+Here are some examples of how wild and dangling pointers can be created:
+A wild pointer can be created when a pointer is declared but not initialized.
+A dangling pointer can be created when a pointer is assigned to a memory location that has already been freed.
+A dangling pointer can also be created when a function returns a pointer to a local variable that is destroyed after the function returns.
+It is important to avoid using wild and dangling pointers, as they can lead to serious problems. Here are some tips for avoiding wild and dangling pointers:
+Always initialize pointers before using them.
+Never use a pointer after the memory it points to has been freed.
+Be careful when returning pointers from functions.
+By following these tips, you can help to avoid wild and dangling pointers and keep your code safe.*/
+
 //P-1 Reverse a linked list 
 //LC- 206
 //TC- O(n), SC-O(1)

@@ -160,7 +160,7 @@ P-10 permutations in a string
 LC-567
 sliding window approach
 */
-//Xtra- check if two strings are anagrams of each other
+// Xtra- check if two strings are anagrams of each other
 /*
 P-11 remove adjacent duplicates from string
 LC-1047
@@ -172,7 +172,14 @@ LC-443
 TC- O(n)
 */
 
-//https://g.co/bard/share/4dab91c5e729
-//https://www.tutorialspoint.com/what-is-the-use-of-cin-ignore-in-cplusplus
+// https://g.co/bard/share/4dab91c5e729
+// https://www.tutorialspoint.com/what-is-the-use-of-cin-ignore-in-cplusplus
 
-//maps--https://g.co/bard/share/ba48704283a3
+// maps--https://g.co/bard/share/ba48704283a3
+
+// P-12 LC-3006
+// TC  for pattern matching O(n*m) n:l(str) m:l(pattern)
+
+// P-13 LC-3008
+// KMP algo used for pattern matching; watch abdul bari youtube video
+////TC  for pattern matching O(n+m)

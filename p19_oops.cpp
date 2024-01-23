@@ -1,6 +1,6 @@
 /*
 1. Object oriented programming-- A type/paradigm of programming, which revolves around objects rather than functions (like in functional programming).
-2. Object-- It is an entity which has some state/property and some behaviour (collectively called data members)
+2. Object-- It is an entity which has some state/property/data members and some behaviour
 E.g. In a mobile game there are two objects- Hero and Villan
 Hero has properties like, name,health,level and behaviours like attack and defence
 Villain has properties like, name,health,level and behaviours like attack and defence
@@ -41,6 +41,7 @@ int main()
     cout<<sizeof(h1)<<endl;
 }*/
 /*
+
 Access modifiers public,private,protected
 public-- public data members can be accessed both inside the class and outside(in instances of that class)
 */
@@ -52,7 +53,7 @@ class Hero{
     int health;
     int level;
 
-    private: //data member below this can be accessed only inside class declaration(for use in other data members) and not for objects(& if we try to do so it will give error)
+    private: //data member below this can be accessed only inside class declaration(for use in other data members/funcs) and not for objects(& if we try to do so it will give error)
     char name[10]= "abcd";
 
     void func(){ //note, it can be used directly inside func, because it has global scope inside class declaration
@@ -63,7 +64,7 @@ class Hero{
 int main()
 {   
     Hero h1;
-    h1.health=100; //dot operator is used to access data members
+    h1.health=100; //dot operator is used to access data members/methods
     h1.level=10;
     cout<<h1.health<<" "<<h1.level<<endl;
 }*/
@@ -204,7 +205,7 @@ int main()
     cout<<h2.health<<endl;
 }*/
 
-//copy assignment operator if we create 2 objects of same class, Hero a(40, 'C') and Hero b(30, 'D') and if we write a=g; then a.health=b.health; a.level=b.level; these instructions will be performed and entire object b will be copied into object a
+//copy assignment operator if we create 2 objects of same class, Hero a(40, 'C') and Hero b(30, 'D') and if we write a=b; then a.health=b.health; a.level=b.level; these instructions will be performed and entire object b will be copied into object a
 
 /* Destructor
 When the scope of an object is over, i.e.
@@ -248,8 +249,8 @@ int main()
     cout<<Hero::timeToComplete<<endl; //we can access it without creating an object
     Hero h1;
     cout<<h1.timeToComplete<<endl;  //can be accessed from object also; not recommended
-}*/
-
+}
+*/
 //Dynamic object creation
 #include<iostream>
 using namespace std;
@@ -270,7 +271,9 @@ The Dot(.) operator is used to normally access members of a obj using its name.
 The Arrow(->) operator exists to access the members of obj using pointers (address)
 this keyword gives address of the current obj
 .*/
-
+//The class code is stored in code segment of memory stack, whereas when an object is created statically, the newly created object data members are stored in stack frame of the function in which it is created, while the methods continue to reside in code segment, as they are the same for all objects; AND when an object is created dynamically, the newly created object data members are stored in heap memory, while the methods continue to reside in code segment, as they are the same for all objects.
 
 
 //4 Pillars of OOPS-- https://www.codingninjas.com/studio/guided-paths/basics-of-c/content/118817/offering/1382190
+
+//https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/
