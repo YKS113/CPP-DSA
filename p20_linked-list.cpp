@@ -391,7 +391,7 @@ bool isCircular(Node* head){
         return 1;
     }
     Node* first = head;
-    Node* curr=first->next; //if started from curr, while loop will not start, hence                    start with curr->next
+    Node* curr=first->next; //if started from first, while loop will not start, hence                    start with curr->next
     while(curr!=first){//this logic for both LL length=1 & >1
         if(curr==NULL){
             return 0;
@@ -419,7 +419,7 @@ bool isCircular(Node* head){
 */
 
 
-//**************************************************************************************PRO TIP for LL probs- always check for cases- empty list, list with 1 node(in case of circular,2 cases- single node & not circulat, single node circular), list with > 1 node  AND always check if any NULL node is being acceessed for NULL->next like condition, if found, add an if statement there like if(curr!=NULL)                                                      **************************************************************************************
+//**************************************************************************************PRO TIP for LL probs- always check for cases- empty list, list with 1 node(in case of circular,2 cases- single node & not circulat, single node circular), list with > 1 node  AND always check if any NULL node is being acceessed for node->next like condition, if found, add an if statement there like if(curr!=NULL)                                                      **************************************************************************************
 
 
 //P-5 detect and remove loop

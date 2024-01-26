@@ -338,4 +338,6 @@ cases-
 //https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/
 
 //P-25
-//LC 974. Subarray Sums Divisible by K
+//⭐LC 974. Subarray Sums Divisible by K
+
+//⭐LC-31. Next Permutation (Narayan Pandit Algo)

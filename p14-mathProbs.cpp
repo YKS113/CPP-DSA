@@ -100,4 +100,7 @@ int main()
 }
 */
 //P-5 Modular Exponentiation
+//https://www.geeksforgeeks.org/modulo-1097-1000000007/
+
 //link- https://www.codingninjas.com/studio/problems/modular-exponentiation_1082146
+
