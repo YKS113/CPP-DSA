@@ -308,6 +308,9 @@ cases-
 
 
 */
+//LC-56. Merge Intervals
+
+//Level 2- do after LL
 
 //P-18 maximum subarray/ kadanes algo
 //LC- 53
@@ -331,8 +334,9 @@ cases-
 //P-23  Jump Game
 //Lc 55
 
-//P-24 Boyer-Moore Majority Voting Algorithm
+//⭐P-24 Boyer-Moore Majority Voting Algorithm
 //LC 169
+//LC-229. Majority Element II
 
 //Prefix sum 
 //https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/
@@ -341,3 +345,4 @@ cases-
 //⭐LC 974. Subarray Sums Divisible by K
 
 //⭐LC-31. Next Permutation (Narayan Pandit Algo)
+//⭐LC-62. Unique Paths

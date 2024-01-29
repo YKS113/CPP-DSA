@@ -52,7 +52,7 @@ class Stack{
     }
     int pop(){
         if(top>=0){
-            //Note- stack pop has no return value, but we can implement if we want
+            //Note-stl stack pop has no return value, but we can implement if we want
             int temp=arr[top];
             arr[top]=0;
             top--;
@@ -134,7 +134,7 @@ cout<<ans;
 //P-3 Delete middle element from stack
 //https://www.codingninjas.com/studio/problems/delete-middle-element-from-stack_985246?leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 
-//P-4 Valid paranthesis
+//⭐P-4 Valid paranthesis
 //https://www.codingninjas.com/studio/problems/valid-parenthesis_795104?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 
 //P-5 Insert An Element At Its Bottom In A Given Stack
@@ -143,23 +143,32 @@ cout<<ans;
 //P-6 Reverse Stack Using Recursion
 //Link- https://www.codingninjas.com/studio/problems/reverse-stack-using-recursion_631875?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 //used two recursions
+//TC- O(n^2) every el is compared with every other once
+//SC O(n) call stack size
 
 //P-7 Sort a Stack
 //https://www.codingninjas.com/studio/problems/sort-a-stack_985275?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+//TC- O(n^2) worst case
+//SC O(n) call stack size
 
-//P-8   Redundant Brackets
+//⭐P-8 Redundant Brackets
 //https://www.codingninjas.com/studio/problems/redundant-brackets_975473?leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 
-//P-9 Minimum Cost To Make String Valid
+//⭐P-9 Minimum Cost To Make String Valid
 //https://www.codingninjas.com/studio/problems/minimum-cost-to-make-string-valid_1115770?leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 //Note- possible remaining items in stack can be 1) {{{{{ 2) }}}}} 3) }}}}}{{{{{      We, need to reverse (a+1)/2 + (b+1)/2 bracts for making them pairs
 
-//P-10 Next Smaller Element
-//https://www.codingninjas.com/studio/problems/next-smaller-element_1112581?topList=love-babbar-dsa-sheet-problems&leftPanelTab=3&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
-//Xtra- Prev Smaller Element (similar approach, but loop start from i=0)
+//⭐LC-1249. Minimum Remove to Make Valid Parentheses
 
-//P-11 Largest Rectangle in Histogram
+
+//⭐P-10 Next Smaller Element
+//https://www.codingninjas.com/studio/problems/next-smaller-element_1112581?topList=love-babbar-dsa-sheet-problems&leftPanelTab=3&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
+//Xtra- Prev Smaller/larger Element (similar approach, but loop start from i=0)
+//LC-1475. Final Prices With a Special Discount in a Shop
+
+//⭐P-11 Largest Rectangle in Histogram
 //LC 84
+//https://g.co/bard/share/6a80c3fa416b
 
 //P-11 N stacks in an array
 //https://www.codingninjas.com/studio/problems/n-stacks-in-an-array_1164271?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0?source=youtube&campaign=Lovebabbarcodestudio11thfeb&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio11thfeb
