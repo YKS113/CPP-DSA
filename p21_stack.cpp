@@ -165,6 +165,7 @@ cout<<ans;
 //https://www.codingninjas.com/studio/problems/next-smaller-element_1112581?topList=love-babbar-dsa-sheet-problems&leftPanelTab=3&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio
 //Xtra- Prev Smaller/larger Element (similar approach, but loop start from i=0)
 //LC-1475. Final Prices With a Special Discount in a Shop
+//LC-739. Daily Temperatures
 
 //⭐P-11 Largest Rectangle in Histogram
 //LC 84
