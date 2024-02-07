@@ -189,7 +189,9 @@ int main()
 {
     Node *root = NULL;
     Node *n = new Node(0);
-    root = n->buildTree(root);   // TC O(n) SC O(1); if stack size cosidrd, O(h) (h of tree) (in case of skewed tree, h=n hence, O(n))
+    root = n->buildTree(root); // TC O(n) SC O(1); if stack size cosidrd, O(h) (h of tree, O(logn)) (in case of skewed tree, h=n hence, O(n))
+    // No. of nodes is n, which is actually 2^h i.e. 2^h=n hence, logn=h (base 2)
+
     n->BreadthFirstSearch(root); // TC O(n) SC O(w) (w-max width of tree)
     n->reverseLevelOrder(root);
     n->inorderTraversal(root);
@@ -220,9 +222,39 @@ int main()
 // P-4 check if tree is balanced or not
 //  https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
 // This method can also be used to solve P-3
+// LC-110. Balanced Binary Tree P-4 M-2
 
 // P-5 Determine if Two Trees are Identical
 // https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1
 
 // P-6 Sum tree
 // https://practice.geeksforgeeks.org/problems/sum-tree/1
+
+// P-7 ZigZag Tree Traversal
+// https://www.geeksforgeeks.org/problems/zigzag-tree-traversal/1
+// LC-103
+// instead of this int index = (leftToRight) ? i : (size - 1 - i);
+//                 ans[index] = node->val;
+// we can also do reverse(ans.begin(),ans.end()) at end of for loop
+
+// P-8 Boundary Traversal of binary tree
+// https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
+/*can also be solved in single traversal-Do a BFS on tree:
+maintain 3 lists, leftBoundary, bottomBoundary, rightBoundary
+insert root in leftBoundary
+while traversing
+insert first node at each level in leftBoundary (if it exists)
+if node is a leaf node, insert in bottomBoundary
+insert last node in rightBoundary (if it exists)
+delete last nodes from leftBoundary and rightBoundary (since these are already part of bottomBoundary)
+reverse rightBoundary
+concatenate leftBoundary+bottomBoundary+rightBoundary
+*/
+
+// P-9 Vertical Traversal of Binary Tree
+// https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
+// LC-987
+
+// P-10 Top View of Binary Tree
+//https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1
+//M-2 Use deque instead of a map, for every level in BFS push leftmost node from front and rightmost node from back
