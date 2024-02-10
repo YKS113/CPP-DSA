@@ -253,8 +253,36 @@ concatenate leftBoundary+bottomBoundary+rightBoundary
 
 // P-9 Vertical Traversal of Binary Tree
 // https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
-// LC-987
+// LC-987   TC O(nlogn) logn for map insertion
 
 // P-10 Top View of Binary Tree
-//https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1
-//M-2 Use deque instead of a map, for every level in BFS push leftmost node from front and rightmost node from back
+// https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1
+// TC O(nlogn)
+// M-2 Use deque instead of a map, for every level in BFS push leftmost node from front and rightmost node from back
+
+// P-11 Bottom View of Binary Tree TC O(nlogn)
+// https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
+
+// P-12 Left View of Binary Tree
+// https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
+// TC- O(n)
+// P-13 Right View of Binary Tree
+// https://www.geeksforgeeks.org/problems/right-view-of-binary-tree/1
+// TC- O(n)
+
+// P-14 Diagonal Traversal of Binary Tree
+// https://www.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1
+// TC O(nlogn)
+
+// P-15 Sum of nodes on the longest path from root to leaf node
+// https://www.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1
+// TC O(n)
+
+// P-16 Lowest Common Ancestor in a Binary Tree
+// https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
+
+// P-17 LC-437 K path sum
+
+// P-18 Kth Ancestor in a Tree
+// https://www.geeksforgeeks.org/problems/kth-ancestor-in-a-tree/1
+// TC O(n) SC O(2h) rec stack height + path vec. size
