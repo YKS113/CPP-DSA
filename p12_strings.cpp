@@ -184,4 +184,6 @@ TC- O(n)
 // KMP algo used for pattern matching; watch abdul bari youtube video
 ////TC  for pattern matching O(n+m)
 
+//LC-3034,3036
+
 //P-14 LC-76. Minimum Window Substring (counting sort M-2)
