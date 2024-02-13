@@ -286,3 +286,25 @@ concatenate leftBoundary+bottomBoundary+rightBoundary
 // P-18 Kth Ancestor in a Tree
 // https://www.geeksforgeeks.org/problems/kth-ancestor-in-a-tree/1
 // TC O(n) SC O(2h) rec stack height + path vec. size
+
+// P-19 Maximum sum of Non-adjacent nodes
+// https://www.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1
+// TC O(n)
+
+// P-20 Construct Tree from Inorder & Preorder
+// https://www.geeksforgeeks.org/problems/construct-tree-1/1
+
+// P-21 Tree from Postorder and Inorder
+// https://www.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1
+
+// P-22 Burning Tree
+// https://www.geeksforgeeks.org/problems/burning-tree/1
+// TC O(n)
+
+// P-23 Morris Traversal
+//https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
+//LC-94
+//Striver video is best
+//TC O(n)-- n for accessing every el once, and small m for finding rightmost el for every n i.e. n*m, but m is negligibly small hence, ~O(n) 
+//SC O(1)
+//can be done similarly for preorder and postorder
