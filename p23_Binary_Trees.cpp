@@ -222,10 +222,15 @@ int main()
 // P-4 check if tree is balanced or not
 //  https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
 // This method can also be used to solve P-3
+
 // LC-110. Balanced Binary Tree P-4 M-2
+
+// P-5 Construct Mirror Tree/Invert a binary tree--inversion means swapping left child and right child for every node
+//https://www.geeksforgeeks.org/problems/mirror-tree/1
 
 // P-5 Determine if Two Trees are Identical
 // https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1
+// LC-101. Symmetric Tree
 
 // P-6 Sum tree
 // https://practice.geeksforgeeks.org/problems/sum-tree/1
@@ -274,9 +279,13 @@ concatenate leftBoundary+bottomBoundary+rightBoundary
 // https://www.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1
 // TC O(nlogn)
 
+// LC-662. Maximum Width of Binary Tree
+
 // P-15 Sum of nodes on the longest path from root to leaf node
 // https://www.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1
 // TC O(n)
+
+// LC-124. Binary Tree Maximum Path Sum
 
 // P-16 Lowest Common Ancestor in a Binary Tree
 // https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
@@ -302,9 +311,14 @@ concatenate leftBoundary+bottomBoundary+rightBoundary
 // TC O(n)
 
 // P-23 Morris Traversal
-//https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
-//LC-94
-//Striver video is best
-//TC O(n)-- n for accessing every el once, and small m for finding rightmost el for every n i.e. n*m, but m is negligibly small hence, ~O(n) 
-//SC O(1)
-//can be done similarly for preorder and postorder
+// https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
+// LC-94
+// Striver video is best
+// TC O(n)-- n for accessing every el once, and small m for finding rightmost el for every n i.e. n*m, but m is negligibly small hence, ~O(n)
+// SC O(1)
+// can be done similarly for preorder and postorder by changing sinle lines position
+// https://www.codingninjas.com/studio/problems/preorder-traversal_3838888?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTabValue=PROBLEM
+
+// P-24 Flatten binary tree to linked list
+// https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
+// LC-114
