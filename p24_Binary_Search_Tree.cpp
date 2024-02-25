@@ -69,7 +69,48 @@ int main()
 // Property--Inorder of BST gives els in sorted order
 
 // P-2 Max and min element in Binary Tree
-//https://www.geeksforgeeks.org/problems/max-and-min-element-in-binary-tree/1
+// https://www.geeksforgeeks.org/problems/max-and-min-element-in-binary-tree/1
 
-//P-3 LC-450. Delete Node in a BST
-//TC O(logn)--2 part process 1.find node takes TC (part of Height) 2.del node takes TC(remaining part of height)
+// P-3 LC-450. Delete Node in a BST
+// TC O(logn)--2 part process 1.find node takes TC (part of Height) 2.del node takes TC(remaining part of height)
+
+// P-4 Validate Partial BST
+// M-1 find inorder traversal of tree in O(n), and check if its sorted or not
+// https://www.codingninjas.com/studio/problems/validate-bst_799483
+// LC-98. Validate Binary Search Tree
+
+// P-5 LC-230. Kth Smallest Element in a BST
+// TC O(n) SC O(h)
+// Xtra- kth largest el in BST, do reverse inorder trav-- RNL
+// M-1 find inrder traversal array and return kth el
+
+// P-6 Predecessor And Successor In BST
+// https://www.codingninjas.com/studio/problems/_893049?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&leftPanelTabValue=PROBLEM
+// TC O(h) SC O(1) due to iterative approach
+// M-1 find inorder trav array and return k-1,k+1 el
+
+// P-7 LCA of Two Nodes In A BST
+// https://www.codingninjas.com/studio/problems/lca-in-a-bst_981280?leftPanelTab=0&leftPanelTabValue=PROBLEM
+// LC-235
+// M-1 simple LCA of tree but wil take TC O(n)
+// TC O(h), SC O(1)/can be done with reccursion also then, SC O(h)
+
+// P-8  Two Sum in a BST
+// https://www.codingninjas.com/studio/problems/two-sum-in-a-bst_1062631?leftPanelTab=0&leftPanelTabValue=PROBLEM
+// M-1 using hashmap, TC O(n), SC O(n)
+// M-2 using vector to store inorder traversal, then finding Two Sum using 2 pointer approach TC O(n+n)~ O(n), SC O(n)
+
+// P-9  Flatten BST To A Sorted List
+// https://www.codingninjas.com/studio/problems/flatten-bst-to-a-sorted-list_1169459?leftPanelTab=0&leftPanelTabValue=PROBLEM
+// TC O(n) SC O(n)
+
+// P-10 Normal BST To Balanced BST
+// https://codingninjas.com/studio/problems/normal-bst-to-balanced-bst_920472?leftPanelTab=0&leftPanelTabValue=PROBLEM
+// TC O(n) SC O(n)
+// similar binary search approach can be used to solve the problem-- contruct BST from an sorted array
+// LC-1382
+
+// P-11 Construct BST from preorder array
+//https://www.codingninjas.com/studio/problems/preorder-traversal-to-bst_893111?leftPanelTab=0&leftPanelTabValue=PROBLEM
+// M-1 sort the array to get inorder, now similar approach like build tree from preorder and inorder TC O(nlogn) for sorting
+//M-2 TC O(n) SC O(n)

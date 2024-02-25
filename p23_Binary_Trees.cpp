@@ -226,7 +226,7 @@ int main()
 // LC-110. Balanced Binary Tree P-4 M-2
 
 // P-5 Construct Mirror Tree/Invert a binary tree--inversion means swapping left child and right child for every node
-//https://www.geeksforgeeks.org/problems/mirror-tree/1
+// https://www.geeksforgeeks.org/problems/mirror-tree/1
 
 // P-5 Determine if Two Trees are Identical
 // https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1
@@ -323,5 +323,4 @@ concatenate leftBoundary+bottomBoundary+rightBoundary
 // https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
 // LC-114
 
-
-//https://g.co/gemini/share/c80e0fc8e04f
+// https://g.co/gemini/share/c80e0fc8e04f
