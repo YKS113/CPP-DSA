@@ -111,6 +111,16 @@ int main()
 // LC-1382
 
 // P-11 Construct BST from preorder array
-//https://www.codingninjas.com/studio/problems/preorder-traversal-to-bst_893111?leftPanelTab=0&leftPanelTabValue=PROBLEM
+// https://www.codingninjas.com/studio/problems/preorder-traversal-to-bst_893111?leftPanelTab=0&leftPanelTabValue=PROBLEM
 // M-1 sort the array to get inorder, now similar approach like build tree from preorder and inorder TC O(nlogn) for sorting
-//M-2 TC O(n) SC O(n)
+// M-2 TC O(n) SC O(n)
+
+// P-12 Merge Two BSTs
+// https://www.codingninjas.com/studio/problems/h_920474?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=PROBLEM
+// M-1 TC O(m+n) SC O(m+n)
+
+// P-13  Size of Largest BST in Binary Tree
+// https://www.codingninjas.com/studio/problems/largest-bst-subtree_893103?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+// M-1 traverse the tree, and for every node find if its subtree isBST and its size TC O(n*n) SC O(h)
+// M-2 TC O(n) SC O(h)
+// LC-1373 Maximum Sum BST in Binary Tree
