@@ -124,3 +124,6 @@ int main()
 // M-1 traverse the tree, and for every node find if its subtree isBST and its size TC O(n*n) SC O(h)
 // M-2 TC O(n) SC O(h)
 // LC-1373 Maximum Sum BST in Binary Tree
+
+//P-14 LC-173. Binary Search Tree Iterator
+//M-1 create inorder vector, and a pointer next;but here were using O(n) space, but qquestion asks O(h) space
