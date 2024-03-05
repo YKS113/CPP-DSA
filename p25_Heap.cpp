@@ -203,6 +203,9 @@ int main()
 // Similarly to find kth largest, use max heap for M2 and min heap for M3
 // LC-215
 // LC-378. Kth Smallest Element in a Sorted Matrix
+// LC-973. K Closest Points to Origin
+// LC-347. Top K Frequent Elements
+// LC-692. Top K Frequent Words
 
 // P-3 Is Binary Tree Heap
 // https://www.geeksforgeeks.org/problems/is-binary-tree-heap/1
@@ -214,7 +217,7 @@ int main()
 
 // P-5 Minimum Cost of ropes
 // https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1
-// TC O(n (for building heap) + nlog (for deleting every top)) ~ O(nlogn)
+// TC O(nlogn (for making heap) + nlog (for deleting every top)) ~ O(nlogn)
 
 // P-6 Convert BST to Min Heap
 // https://www.geeksforgeeks.org/convert-bst-min-heap/
@@ -246,4 +249,4 @@ int main()
 // SC O(k)
 // LC-632
 
-// P-12 LC-1642. Furthest Building You Can Reach 
+// P-12 LC-1642. Furthest Building You Can Reach
