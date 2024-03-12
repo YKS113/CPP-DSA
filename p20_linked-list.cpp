@@ -457,3 +457,5 @@ bool isCircular(Node* head){
 //P-14 Merge Sort Linked List 
 //Link- https://www.codingninjas.com/studio/problems/merge-sort-linked-list_920473?
 //Note-- we preferMerge sort in LL and quick sort in arrays, because accessing random elements in Ll is costly operation which is not the case in arrays
+
+//P-15 LC-1171. Remove Zero Sum Consecutive Nodes from Linked List
