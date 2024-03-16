@@ -346,3 +346,5 @@ cases-
 
 //⭐LC-31. Next Permutation (Narayan Pandit Algo)
 //⭐LC-62. Unique Paths
+
+//LC-525. Contiguous Array
