@@ -215,6 +215,7 @@ we first xor all elments in array then we xor the ans with all integers from 1 t
 
 /*
 P-8 Leetcode 442 Find all duplicates in array
+⭐LC-41. First Missing Positive
 */
 
 /*
@@ -348,3 +349,8 @@ cases-
 //⭐LC-62. Unique Paths
 
 //LC-525. Contiguous Array
+
+
+
+
+

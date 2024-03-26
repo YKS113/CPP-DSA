@@ -85,4 +85,14 @@ int main()
 
 // P-4 Cycle Detection In Undirected Graph
 // https://www.codingninjas.com/studio/problems/cycle-detection-in-undirected-graph_1062670?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=PROBLEM
-//Both methods, bfs & dfs are imp
+// Both methods, bfs & dfs are imp
+
+// P-5  Detect Cycle In A Directed Graph
+//https://www.codingninjas.com/studio/problems/detect-cycle-in-a-directed-graph_1062626?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=PROBLEM
+
+/*
+images\directed_graph_loop.png here, there is a loop in directed graph
+But, images\directed_graph_non_loop.png here there is no loop, 
+If we apply older(undirected graph algo here, it will give this also as a looped graph, hence we require a new algo, where we track if the node is already visited and is currently in the call stack or not)
+
+*/
